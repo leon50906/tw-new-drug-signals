@@ -1,0 +1,16 @@
+# Cloudflare Pages 讀這個檔（必須放在輸出目錄的根）。
+#
+# 這一頁每天重建，而且它的內容是「今天為止查到什麼」。被 CDN 快取住的舊版本
+# 讀起來和「今天沒有新藥」一模一樣——那正是這整個 repo 在防的那種錯。
+# 所以 HTML 與 data.json 每次都回源驗證。
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/data.json
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+
+/
+  Cache-Control: public, max-age=0, must-revalidate

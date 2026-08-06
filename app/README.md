@@ -76,15 +76,50 @@ canary 只讀 ledger 裡已經查到的那一筆，重建網頁不另外打政�
 ## 自動化
 
 `.github/workflows/ledger.yml`：每天台北時間 06:00 抓公告 → 補 60 張明細 →
-重建網頁 → commit → 發布到 GitHub Pages。
+重建網頁 → commit 回 repo → 部署。
 
 更密集沒有意義：上游資料本身落後 20–29 天，公告中位落後 69 天。
 一小時跑一次不會更早知道任何事，只會把流量指向政府主機。
 
-## 開 GitHub Pages
+## 發布到 Cloudflare Pages
 
-Settings → Pages → Source 選 **GitHub Actions**（不是 Deploy from a branch）。
-之後每次工作流程跑完就會更新。
+輸出目錄是 `app/site`，裡面已經是成品——**沒有建置步驟**（`index.html` 資料內嵌，
+不需要 npm、不需要框架）。`app/site/_headers` 讓 HTML 與 `data.json` 每次回源
+驗證：一份被 CDN 快取住的舊清單，讀起來和「今天沒有新藥」一模一樣。
+
+兩條路，**挑一條就好**，兩條都設會部署兩次。
+
+### 路線 A：Git 整合（建議，不用任何 secret）
+
+Cloudflare Dashboard → Workers & Pages → Create → Pages → Connect to Git，
+選這個 repo，然後：
+
+| 欄位 | 值 |
+|---|---|
+| Framework preset | None |
+| Build command | *（留空）* |
+| Build output directory | `app/site` |
+| Production branch | 你要發布的那個分支 |
+
+之後工作流程每天那個 commit 就會自動觸發部署，不必再設定什麼。
+
+### 路線 B：wrangler 直傳（要 secret，但不必把 repo 接給 Cloudflare）
+
+先在 Dashboard 用 **Direct Upload** 建一個 Pages 專案（取個名字，先傳空目錄
+或隨便一個檔案佔位），然後在 GitHub repo 設定：
+
+- Secrets：`CLOUDFLARE_API_TOKEN`（權限選 *Cloudflare Pages — Edit*）、
+  `CLOUDFLARE_ACCOUNT_ID`
+- Variables：`CLOUDFLARE_PROJECT_NAME`（上一步那個專案名）
+
+工作流程裡的部署步驟只有在 `CLOUDFLARE_API_TOKEN` 有值時才會跑，
+所以沒設就是路線 A，設了就是路線 B。
+
+### 手動傳一次（不經 CI）
+
+```console
+$ npx wrangler pages deploy app/site --project-name=<你的專案名>
+```
 
 ## 這份清單能講什麼
 

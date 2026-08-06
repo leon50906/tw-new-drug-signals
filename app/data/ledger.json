@@ -1940,9 +1940,45 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638841409478716744&type=2&cid=49043",
      "note": "台灣諾和諾德藥品股份有限公司「週胰保諾特筆」(衛部菌疫輸字第001287號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=60001287",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA06000128704",
+    "prodNameC": "週胰保諾特筆",
+    "prodNameE": "Awiqli 700 units/mL solution for injection in pre-filled pen (FlexTouch)",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5F 免除銜接性試驗",
+     "68 成品已完成元素不純物評估(Option 3)"
+    ],
+    "issueDate": "2025-04-18 00:00:00.000",
+    "oriIssueDate": "2025-04-18",
+    "validDate": "2030-04-18 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "INSULIN ICODEC"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "A10AE07"
+     }
+    ],
+    "applicantName": "台灣諾和諾德藥品股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第028859號": {
    "permit_no": "衛部藥輸字第028859號",
@@ -1956,9 +1992,45 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638814623138665854&type=2&cid=48851",
      "note": "新加坡商希米科亞太股份有限公司台灣分公司「蕾羅克錠200毫克」(衛部藥輸字第028859號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52028859",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202885902",
+    "prodNameC": "蕾羅克錠200毫克",
+    "prodNameE": "REZUROCK tablets 200 mg",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5F 免除銜接性試驗",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-02-10 00:00:00.000",
+    "oriIssueDate": "2025-02-10",
+    "validDate": "2030-02-10 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "Belumosudil mesylate"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "L04AA48"
+     }
+    ],
+    "applicantName": "台灣明治醫藥股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部菌疫輸字第001286號": {
    "permit_no": "衛部菌疫輸字第001286號",
@@ -1972,9 +2044,46 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638814617323896286&type=2&cid=48850",
      "note": "臺灣阿斯特捷利康股份有限公司「能伏鼻三價鼻噴式流感疫苗」(衛部菌疫輸字第001286號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=60001286",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA06000128602",
+    "prodNameC": "能伏鼻三價鼻噴式流感疫苗",
+    "prodNameE": "FluMist Trivalent Flu Vaccine",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5F 免除銜接性試驗"
+    ],
+    "issueDate": "2025-03-24 00:00:00.000",
+    "oriIssueDate": "2025-03-24",
+    "validDate": "2030-03-24 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "A/Perth/722/2024 (H3N2) (A/Croatia/10136RV/2023-like virus)",
+     "A/Norway/31694/2022 (H1N1, A/Victoria/4897/2022-like)",
+     "B/Austria/1359417/2021 (B/Victoria lineage)-like virus"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "J07BB03"
+     }
+    ],
+    "applicantName": "臺灣阿斯特捷利康股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第028837號": {
    "permit_no": "衛部藥輸字第028837號",

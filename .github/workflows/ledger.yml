@@ -19,8 +19,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 # 兩輪同時跑會互相覆蓋 ledger。排隊，不取消——被取消的那一輪已經打過的
 # 請求就白打了。
@@ -32,6 +30,13 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    env:
+      # 有設 secret 才會走 wrangler 直傳；沒設就靠 Cloudflare Pages 的
+      # Git 整合去接下面那個 commit（兩條路只需要一條，見 app/README.md）。
+      CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CF_PROJECT: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
+
     steps:
       - uses: actions/checkout@v4
 
@@ -52,30 +57,36 @@ jobs:
         run: python app/pipeline/enrich_details.py --budget ${{ github.event.inputs.budget || 60 }}
 
       # 管線是在它最後一個介面上被驗證的。控制沒過就不產生輸出，
-      # 這一步失敗，舊的網頁維持原樣。
+      # 這一步失敗，整個工作流程停在這裡，線上的網頁維持原樣。
       - name: 重建網頁（含控制）
         run: python app/pipeline/build_site.py
 
       - name: 存檔
+        id: commit
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add app/data/ledger.json app/site/data.json app/site/index.html
-          git diff --staged --quiet && echo "# 沒有變化" && exit 0
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "# 沒有變化"
+            exit 0
+          fi
           git commit -m "ledger: $(date -u +%Y-%m-%d) 自動更新"
           git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      # 路線 B：wrangler 直傳。只有設了 secret 才跑。
+      # 路線 A（Cloudflare Pages 的 Git 整合）不需要這一步——上面那個
+      # push 就會觸發部署。兩條都設會部署兩次，挑一條。
+      - name: 發布到 Cloudflare Pages
+        if: ${{ env.CF_TOKEN != '' }}
+        uses: cloudflare/wrangler-action@v3
         with:
-          path: app/site
-
-  deploy:
-    needs: update
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: >-
+            pages deploy app/site
+            --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }}
+            --branch=${{ github.ref_name }}
+            --commit-dirty=true
