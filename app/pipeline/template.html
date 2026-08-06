@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>台灣新上市西藥訊號板</title>
+<meta name="description" content="食藥署新成分新藥公告 × 許可證明細 07 新藥監視，逐筆首次觀察，方法依 tw-new-drug-signals。">
+<style>
+:root{
+  color-scheme: light;
+  --plane:#f9f9f7; --surface:#fcfcfb;
+  --ink:#0b0b0b; --ink-2:#52514e; --ink-muted:#898781;
+  --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.10);
+  --sig-nme:#2a78d6;      /* categorical slot 1 — 新成分新藥公告 */
+  --sig-07:#eb6834;       /* categorical slot 2 — 07 新藥監視 */
+  --good:#0ca30c; --warning:#fab219; --critical:#d03b3b;
+  --good-text:#006300;
+  --wash:rgba(11,11,11,.04);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --plane:#0d0d0d; --surface:#1a1a19;
+    --ink:#fff; --ink-2:#c3c2b7; --ink-muted:#898781;
+    --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10);
+    --sig-nme:#3987e5; --sig-07:#d95926;
+    --good:#0ca30c; --warning:#fab219; --critical:#d03b3b;
+    --good-text:#0ca30c;
+    --wash:rgba(255,255,255,.05);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --plane:#0d0d0d; --surface:#1a1a19;
+  --ink:#fff; --ink-2:#c3c2b7; --ink-muted:#898781;
+  --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10);
+  --sig-nme:#3987e5; --sig-07:#d95926;
+  --good-text:#0ca30c;
+  --wash:rgba(255,255,255,.05);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--plane); color:var(--ink);
+  font-family:system-ui,-apple-system,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  font-size:15px; line-height:1.65; -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:1180px; margin:0 auto; padding:28px 20px 80px}
+a{color:inherit; text-decoration:underline; text-underline-offset:2px; text-decoration-color:var(--axis)}
+a:hover{text-decoration-color:currentColor}
+h1{font-size:26px; line-height:1.3; margin:0 0 6px; letter-spacing:-.01em}
+h2{font-size:17px; margin:0 0 10px; letter-spacing:-.005em}
+h3{font-size:14px; margin:0 0 6px; color:var(--ink-2)}
+p{margin:0 0 10px}
+.sub{color:var(--ink-2); font-size:14px; margin:0}
+.card{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:18px 20px; margin:16px 0}
+.muted{color:var(--ink-muted)}
+.small{font-size:13px; line-height:1.6}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.9em;
+     background:var(--wash); padding:1px 5px; border-radius:4px}
+
+/* ---------- header ---------- */
+header{border-bottom:1px solid var(--border); padding-bottom:18px; margin-bottom:4px}
+.srcline{margin-top:10px; font-size:13px; color:var(--ink-2); display:flex; flex-wrap:wrap; gap:6px 14px}
+
+/* ---------- stat tiles ---------- */
+.tiles{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1px;
+       background:var(--border); border:1px solid var(--border); border-radius:12px; overflow:hidden; margin:18px 0}
+.tile{background:var(--surface); padding:14px 16px}
+.tile .v{font-size:28px; font-weight:600; letter-spacing:-.02em; line-height:1.15}
+.tile .k{font-size:12.5px; color:var(--ink-2); margin-top:2px}
+.tile .n{font-size:11.5px; color:var(--ink-muted); margin-top:3px; line-height:1.45}
+
+/* ---------- signal pills ---------- */
+.pill{display:inline-flex; align-items:center; gap:5px; font-size:12px; line-height:1;
+      padding:4px 8px 4px 6px; border-radius:999px; border:1px solid var(--border);
+      background:var(--surface); white-space:nowrap; color:var(--ink-2)}
+.dot{width:8px; height:8px; border-radius:50%; flex:none}
+.dot.nme{background:var(--sig-nme)}
+.dot.s07{background:var(--sig-07)}
+.dot.pending{background:var(--ink-muted)}
+.dot.nf{background:var(--critical)}
+.dot.good{background:var(--good)}
+
+/* ---------- chart ---------- */
+.chartwrap{overflow-x:auto}
+svg{display:block}
+.bar{fill:var(--sig-nme)}
+.gridline{stroke:var(--grid); stroke-width:1}
+.axisline{stroke:var(--axis); stroke-width:1}
+.tick{fill:var(--ink-muted); font-size:11px}
+.blabel{fill:var(--ink-2); font-size:11px; font-weight:600}
+
+/* ---------- filters ---------- */
+.filters{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:0 0 12px}
+input[type=search],select{
+  font:inherit; font-size:14px; padding:7px 10px; border-radius:8px;
+  border:1px solid var(--border); background:var(--surface); color:var(--ink);
+}
+input[type=search]{min-width:230px; flex:1 1 230px}
+.chk{display:inline-flex; align-items:center; gap:6px; font-size:13.5px; color:var(--ink-2);
+     padding:6px 10px; border:1px solid var(--border); border-radius:8px; background:var(--surface); cursor:pointer}
+.chk input{margin:0}
+.count{font-size:13px; color:var(--ink-muted); margin-left:auto}
+
+/* ---------- table ---------- */
+.tablewrap{overflow-x:auto; border:1px solid var(--border); border-radius:12px; background:var(--surface)}
+table{border-collapse:collapse; width:100%; font-size:13.5px}
+th,td{text-align:left; padding:9px 12px; border-bottom:1px solid var(--grid); vertical-align:top}
+th{font-size:12px; font-weight:600; color:var(--ink-2); white-space:nowrap;
+   position:sticky; top:0; background:var(--surface); z-index:1; border-bottom:1px solid var(--axis)}
+tbody tr:last-child td{border-bottom:none}
+tbody tr.row{cursor:pointer}
+tbody tr.row:hover{background:var(--wash)}
+tbody tr.row:focus-visible{outline:2px solid var(--sig-nme); outline-offset:-2px}
+:where(a,input,select,label.chk):focus-visible{outline:2px solid var(--sig-nme); outline-offset:2px}
+td.num{font-variant-numeric:tabular-nums; white-space:nowrap}
+td.pno{font-variant-numeric:tabular-nums; white-space:nowrap; font-size:13px}
+.prod{font-weight:600}
+.moi{color:var(--ink-2); font-size:12.5px; max-width:300px}
+#tbl td:nth-child(2){min-width:170px}
+.newmark{display:inline-block; margin-left:6px; font-size:11px; font-weight:600; line-height:1;
+         padding:3px 6px; border-radius:5px; color:#fff; background:var(--sig-nme); vertical-align:1px}
+.det{background:var(--wash)}
+.det td{padding:14px 16px}
+.detgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px 24px}
+.detgrid dt{font-size:11.5px; color:var(--ink-muted); margin-bottom:2px}
+.detgrid dd{margin:0 0 10px; font-size:13px}
+.codes{display:flex; flex-wrap:wrap; gap:5px}
+.codes span{font-size:11.5px; padding:2px 7px; border-radius:6px; background:var(--surface);
+            border:1px solid var(--border); font-variant-numeric:tabular-nums}
+.codes span.is07{border-color:var(--sig-07); color:var(--ink)}
+
+/* ---------- misc ---------- */
+.identity{width:100%; border-collapse:collapse; font-size:13px; margin-top:6px}
+.identity th,.identity td{border-bottom:1px solid var(--grid); padding:8px 10px}
+.identity th{white-space:nowrap}
+ul{margin:0 0 10px; padding-left:20px}
+li{margin:3px 0}
+.ctrlrow{display:flex; gap:10px; align-items:baseline; padding:6px 0; border-bottom:1px solid var(--grid); font-size:13px}
+.ctrlrow:last-child{border-bottom:none}
+.ctrlrow .nm{flex:1 1 auto}
+.ctrlrow .st{flex:none; font-weight:600; font-size:12px}
+.st.pass{color:var(--good-text)}
+.st.fail{color:var(--critical)}
+footer{margin-top:34px; padding-top:18px; border-top:1px solid var(--border); font-size:13px; color:var(--ink-2)}
+@media (max-width:640px){
+  h1{font-size:22px}
+  .wrap{padding:20px 14px 60px}
+  .tile .v{font-size:24px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>台灣新上市西藥訊號板</h1>
+  <p class="sub">食藥署〈新成分新藥核准審查報告摘要〉每一則公告 → 展開成許可證號 → 逐張查明細判定 <code>07 新藥監視</code>。方法逐條依照 <a href="https://github.com/leon50906/tw-new-drug-signals" rel="noopener">tw-new-drug-signals</a>。</p>
+  <div class="srcline">
+    <span>資料產生於 <strong id="gen"></strong></span>
+    <span>·</span>
+    <a id="src-nme" href="#" rel="noopener">來源一：新成分新藥公告清單</a>
+    <span>·</span>
+    <a id="src-api" href="#" rel="noopener">來源二：許可證明細 API</a>
+  </div>
+</header>
+
+<div class="card" id="readfirst">
+  <h2>先讀這三句，再看下面的表</h2>
+  <ul class="small">
+    <li><strong>這張表沒有的，不等於不是新藥。</strong> 公告清單中位落後發證日 69 天（<code>M-14</code>），而且它的收錄準則食藥署沒有公開。一個號碼不在上面，可能是還沒公告、可能不在收錄範圍、也可能真的不是——資料分不出來。</li>
+    <li><strong>日期是發證日，不是核准日，也不是本站觀察到的日期。</strong> 優先取明細的 <code>oriIssueDate</code>；<code>issueDate</code> 會被換發推到後面（<code>M-21</code>）。標了「換發」的列就是兩個欄位不一致的那些。</li>
+    <li><strong>兩個訊號不是同一種東西。</strong> 公告清單列出來的每一筆都是食藥署審查認定的權威事實；<code>07</code> 只是「這張證的明細裡有這個碼」，不是法定身分的判準。詳見頁尾的身分表。</li>
+  </ul>
+</div>
+
+<div class="tiles" id="tiles"></div>
+
+<div class="card">
+  <h2>逐年公告則數</h2>
+  <p class="small muted" id="yearnote"></p>
+  <div class="chartwrap"><svg id="yearchart" role="img" aria-label="逐年新成分新藥公告則數"></svg></div>
+</div>
+
+<div class="card">
+  <h2>逐證清單</h2>
+  <div class="filters">
+    <input type="search" id="q" placeholder="搜尋許可證號、品名、成分、廠商…" aria-label="搜尋">
+    <select id="year" aria-label="公告年度"><option value="">全部年度</option></select>
+    <select id="sig" aria-label="訊號">
+      <option value="">全部訊號</option>
+      <option value="07">帶 07 新藥監視</option>
+      <option value="no07">已查明細、無 07</option>
+      <option value="pending">明細待查</option>
+      <option value="notfound">查無明細</option>
+      <option value="new">最近一次重跑才首次觀察到</option>
+      <option value="reissue">發證日來自換發（issueDate ≠ oriIssueDate）</option>
+      <option value="cancelled">已註銷</option>
+    </select>
+    <label class="chk"><input type="checkbox" id="combo"> 只看複方</label>
+    <span class="count" id="count"></span>
+  </div>
+  <div class="tablewrap">
+    <table id="tbl">
+      <thead><tr>
+        <th>許可證號</th><th>品名</th><th>正規化 moiety</th>
+        <th>發證日</th><th>公告日</th><th>落差</th><th>訊號</th>
+      </tr></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+  <p class="small muted" style="margin-top:10px">點一列（或用鍵盤 Enter）展開明細。「落差」＝ 公告日 − 發證日，天數為正代表公告晚於發證。標「新」的是本站最近一次重跑才第一次看到的證——問的是「這一筆我以前見過嗎」，不是「發證日在最近幾天內」，所以一個公告晚了三個月的品項照樣會在它出現的那一次被標出來，而且帶著它真正的發證日。</p>
+</div>
+
+<div class="card" id="unresolved-card">
+  <h2>無法解析的公告標題</h2>
+  <p class="small">這些不是漏抓，是<strong>刻意的拒絕</strong>。字別是 61 筆的封閉集合，對不上就用許可證表反查，不要猜——已知一例是來源錯字「衛部藥字第027731號」（正確為衛部藥輸字）。猜這次剛好會對，但那是運氣不是方法：同一個序號在別的字別底下也可能存在。</p>
+  <div id="unresolved"></div>
+</div>
+
+<div class="card">
+  <h2>第三個訊號（moiety 首見）為什麼不在這裡</h2>
+  <p class="small">tw-new-drug-signals 有三個訊號，這個站只跑得動兩個。moiety 首見的基線<strong>必須涵蓋全部許可證，包含已註銷的</strong>——漏掉已註銷證，會把「早就上市、證已註銷」的分子算成新藥（真實案例：REMDESIVIR 的 2020 年證已註銷，只看現行證會把 2023 年那張判成首見）。那份基線是 66,440 張證（<code>M-05</code>），本站沒有鏡像它，所以<strong>算不出首見，也就不假裝算得出</strong>。</p>
+  <p class="small">表上的「正規化 moiety」欄位是用同一支正規化器（剝鹽別、丟賦形劑）跑出來的<strong>字串</strong>，只用來讓你看見成分被正規化成什麼樣子。<strong>它沒有帶任何首見判定</strong>，也不是「這個分子在台灣首見」——鹽別會被剝掉，主管機關視為有意義的差異會消失（leuprolide mesylate 對 acetate 就是這樣被抹平的）。</p>
+</div>
+
+<div class="card">
+  <h2>控制與活體 canary</h2>
+  <p class="small">每個比對器都需要<strong>兩個</strong>控制：一個必須亮的正控，一個必須不亮的負控。只有正控的工具，對「抓太多」完全沒有偵測能力——一個把所有東西都判成 true 的比對器，正控會完美通過。下面這些在每次重建網頁時跑一次。</p>
+  <div id="canary" class="small" style="margin:10px 0 14px"></div>
+  <div id="controls"></div>
+</div>
+
+<footer>
+  <h3>三個訊號的身分不一樣</h3>
+  <table class="identity" id="identity"></table>
+  <p class="small" style="margin-top:14px">
+    這個站是 <a href="https://github.com/leon50906/tw-new-drug-signals" rel="noopener">tw-new-drug-signals</a> 的應用層：方法、法源與界線寫在那個 repo 的 <code>docs/</code>，數字的量測編號（<code>M-NN</code>）查得到母體與重跑方式。
+    本站自己算出來的數字（帶 07 的張數、落差中位數）母體都寫在該格底下，那是本站在產生時間點的觀察，不是食藥署發布的統計。
+  </p>
+  <p class="small">法規以全國法規資料庫為準，資料以食藥署公開來源為準。這裡是方法示範，不是法律意見，也不是臨床建議。</p>
+</footer>
+
+</div>
+
+<script id="payload" type="application/json">__DATA__</script>
+<script>
+(function(){
+"use strict";
+const D = JSON.parse(document.getElementById("payload").textContent);
+const $ = s => document.querySelector(s);
+const el = (t,c,x) => { const n=document.createElement(t); if(c)n.className=c; if(x!=null)n.textContent=x; return n; };
+
+/* ---------------- header ---------------- */
+$("#gen").textContent = D.generated_at.replace("T"," ").slice(0,16) + "（台北時間）";
+$("#src-nme").href = D.sources.nme_list;
+$("#src-api").href = D.sources.method_repo + "/blob/main/docs/00-sources.md";
+
+/* ---------------- stat tiles ----------------
+   每一格都帶母體或方法：一個沒有母體的數字不該掛在真名底下。 */
+const S = D.stats;
+const tiles = [
+  ["公告則數", S.announcements, "食藥署清單當下的總則數"],
+  ["候選許可證", S.permits, "把標題展開成證號後去重"],
+  ["帶 07 新藥監視", S.designated_07, `母體是已查到明細的 ${S.detail_ok} 張`],
+  ["明細待查", S.detail_pending, "每 30 秒一張，分批補齊"],
+  ["查無明細", S.detail_not_found, "展開造出了不存在的證"],
+  ["無法解析", S.unresolved, "刻意拒絕，不猜"],
+];
+if (S.lag_median != null) tiles.push(
+  ["公告落差中位數", S.lag_median + " 天",
+   `公告日 − 發證日，母體 ${S.lag_n} 張（範圍 ${S.lag_min} 至 ${S.lag_max}）`]);
+const tilesBox = $("#tiles");
+tiles.forEach(([k,v,n])=>{
+  const d = el("div","tile");
+  d.appendChild(el("div","v", String(v)));
+  d.appendChild(el("div","k", k));
+  d.appendChild(el("div","n", n));
+  tilesBox.appendChild(d);
+});
+
+/* ---------------- 逐年公告則數 ----------------
+   單一序列，所以不需要圖例；標題已經指名它是什麼。 */
+// 以「則」為單位：同一則公告可能對到多張證，所以用公告的 PDF 連結去重。
+const seenAnn = {};
+(D.rows||[]).forEach(r=>{ if(r.pdf && r.announced_on){ seenAnn[r.pdf]=r.announced_on.slice(0,4); }});
+const counts = {};
+Object.values(seenAnn).forEach(y=>counts[y]=(counts[y]||0)+1);
+const years = Object.keys(counts).sort();
+const yMin = +years[0], yMax = +years[years.length-1];
+const allYears = []; for(let y=yMin;y<=yMax;y++) allYears.push(String(y));
+const zeroYears = allYears.filter(y=>!counts[y]);
+
+$("#yearnote").textContent =
+  `以「則」為單位（同一則公告可以帶好幾張證）。${zeroYears.length ? zeroYears.join("、") + " 整年沒有任何公告——" : ""}`
+  + "這個清單不連續，所以任何「多久沒新公告 → 出事了」的告警，門檻要用月為單位。"
+  + `${allYears[allYears.length-1]} 是部分年度。`;
+
+(function drawYearChart(){
+  const svg = $("#yearchart");
+  const n = allYears.length;
+  const barW = 34, gap = 10, padL = 34, padR = 12, padT = 16, padB = 30;
+  const W = padL + n*barW + (n-1)*gap + padR;
+  const H = 190;
+  const plotH = H - padT - padB;
+  const max = Math.max(...allYears.map(y=>counts[y]||0), 1);
+  const nice = Math.ceil(max/10)*10 || 10;
+  const NS = "http://www.w3.org/2000/svg";
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.setAttribute("width", W);
+  svg.setAttribute("height", H);
+  const add = (tag, attrs, text) => {
+    const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    svg.appendChild(e); return e;
+  };
+  [0, nice/2, nice].forEach(v=>{
+    const y = padT + plotH - (v/nice)*plotH;
+    add("line", {x1:padL, x2:W-padR, y1:y, y2:y, class: v===0 ? "axisline" : "gridline"});
+    add("text", {x:padL-7, y:y+4, class:"tick", "text-anchor":"end"}, String(v));
+  });
+  allYears.forEach((y,i)=>{
+    const v = counts[y]||0;
+    const x = padL + i*(barW+gap);
+    const h = (v/nice)*plotH;
+    if (v>0) add("rect", {x, y: padT+plotH-h, width:barW, height:h, rx:4, class:"bar"});
+    // 選擇性直接標示：只標最高與最新，不是每根都標數字。
+    if (v === max || i === allYears.length-1)
+      add("text", {x:x+barW/2, y:padT+plotH-h-5, class:"blabel", "text-anchor":"middle"}, String(v));
+    add("text", {x:x+barW/2, y:H-10, class:"tick", "text-anchor":"middle"}, y.slice(2));
+    const t = add("rect", {x, y:padT, width:barW, height:plotH, fill:"transparent"});
+    t.appendChild(document.createElementNS(NS,"title")).textContent = `${y}：${v} 則`;
+  });
+})();
+
+/* ---------------- 清單 ---------------- */
+const SIGLABEL = D.signals;
+const rows = D.rows || [];
+
+// 逐筆首次觀察：最新的 first_seen 就是「上一次重跑新看到的那一批」。
+// 這不是尾隨時間窗——一個發證日在三個月前、公告今天才出現的品項，
+// 照樣會落在這一批裡，而且帶著它真正的發證日。
+const latestSeen = rows.reduce((m,r)=> r.first_seen > m ? r.first_seen : m, "");
+const isNew = r => r.first_seen === latestSeen;
+const firstRun = rows.every(isNew);   // 第一次跑，整批都是「新看到的」，那不是訊號
+
+const yearSel = $("#year");
+[...new Set(rows.map(r=>r.announced_on && r.announced_on.slice(0,4)).filter(Boolean))]
+  .sort().reverse().forEach(y=>{ const o=el("option",null,y+" 年"); o.value=y; yearSel.appendChild(o); });
+
+function pills(r){
+  const box = el("span");
+  if (r.signals.includes("nme_report")){
+    const p = el("span","pill"); p.appendChild(el("span","dot nme"));
+    p.appendChild(el("span",null,"公告")); p.title = SIGLABEL.nme_report.is; box.appendChild(p);
+  }
+  if (r.signals.includes("restraint_07")){
+    const p = el("span","pill"); p.appendChild(el("span","dot s07"));
+    p.appendChild(el("span",null,"07")); p.title = SIGLABEL.restraint_07.is; box.appendChild(p);
+  }
+  if (r.detail_status === "pending"){
+    const p = el("span","pill"); p.appendChild(el("span","dot pending"));
+    p.appendChild(el("span",null,"待查")); p.title="明細還沒查，不代表沒有 07"; box.appendChild(p);
+  }
+  if (r.detail_status === "not_found"){
+    const p = el("span","pill"); p.appendChild(el("span","dot nf"));
+    p.appendChild(el("span",null,"查無")); p.title="標題展開造出了一張不存在的證"; box.appendChild(p);
+  }
+  return box;
+}
+
+function detailRow(r){
+  const tr = el("tr","det");
+  const td = el("td"); td.colSpan = 7;
+  const dl = el("dl","detgrid");
+  const put = (k, node) => {
+    dl.appendChild(el("dt",null,k));
+    const dd = el("dd");
+    if (typeof node === "string") dd.textContent = node; else if (node) dd.appendChild(node);
+    else dd.appendChild(el("span","muted","—"));
+    dl.appendChild(dd);
+  };
+  put("英文品名", r.product_en || "");
+  put("申請商", r.applicant || "");
+  put("成分（明細原始字串）", (r.ingredients_raw && r.ingredients_raw.length)
+      ? r.ingredients_raw.join(" ／ ")
+      : (r.detail_status==="ok" ? "成分資料缺漏——這不是零，是不知道" : ""));
+  put("正規化 moiety（全部）", r.moieties.length ? r.moieties.join(" ／ ") : "");
+  if (r.dropped_excipients && r.dropped_excipients.length)
+    put("正規化時丟棄的賦形劑", r.dropped_excipients.join(" ／ "));
+  put("ATC", (r.atc && r.atc.length) ? r.atc.join(", ") : "");
+  if (r.restraint_codes && r.restraint_codes.length){
+    const box = el("div","codes");
+    r.restraint_codes.forEach(c=>{
+      const s = el("span",null,c);
+      if (String(c).split(/\s+/)[0] === "07") s.className = "is07";
+      box.appendChild(s);
+    });
+    put("限制項目（restraintItemsCode）", box);
+  }
+  put("發證日欄位", r.issue_date_field ? r.issue_date_field + (r._reissue ? "（issueDate 為換發日 " + r._issueDate + "，已改用 oriIssueDate）" : "") : "");
+  put("最早被哪個訊號看見", r.first_signal ? `${SIGLABEL[r.first_signal].label}，${r.first_signal_at}` : "");
+  put("本站首次觀察到", r.first_seen);
+  put("明細查詢日", r.detail_queried_at || "尚未查詢");
+  if (r.cancel_date) put("註銷", r.cancel_date + (r.cancel_reason ? "：" + r.cancel_reason : ""));
+  const links = el("div");
+  if (r.pdf){ const a = el("a",null,"審查報告 PDF"); a.href = r.pdf; a.rel="noopener"; links.appendChild(a); links.appendChild(el("span",null," · ")); }
+  const a2 = el("a",null,"食藥署許可證頁"); a2.href = r.permit_url; a2.rel="noopener"; links.appendChild(a2);
+  put("連結", links);
+  if (r.announcement_title){
+    dl.appendChild(el("dt",null,"公告標題"));
+    const dd = el("dd"); dd.style.gridColumn="1/-1"; dd.textContent = r.announcement_title; dl.appendChild(dd);
+  }
+  td.appendChild(dl); tr.appendChild(td);
+  return tr;
+}
+
+const tbody = $("#tbody");
+function render(){
+  const q = $("#q").value.trim().toLowerCase();
+  const y = $("#year").value;
+  const sg = $("#sig").value;
+  const combo = $("#combo").checked;
+  tbody.textContent = "";
+  let shown = 0;
+  rows.forEach(r=>{
+    if (y && (r.announced_on||"").slice(0,4) !== y) return;
+    if (combo && !r.is_combination) return;
+    if (sg === "07" && !r.signals.includes("restraint_07")) return;
+    if (sg === "no07" && !(r.detail_status==="ok" && !r.signals.includes("restraint_07"))) return;
+    if (sg === "pending" && r.detail_status !== "pending") return;
+    if (sg === "notfound" && r.detail_status !== "not_found") return;
+    if (sg === "new" && !(isNew(r) && !firstRun)) return;
+    if (sg === "reissue" && !r._reissue) return;
+    if (sg === "cancelled" && !r.cancel_date) return;
+    if (q){
+      const hay = [r.permit_no, r.product, r.product_en, r.applicant,
+                   r.moieties.join(" "), r.announcement_title].join(" ").toLowerCase();
+      if (!hay.includes(q)) return;
+    }
+    shown++;
+    const tr = el("tr","row");
+    tr.appendChild(el("td","pno", r.permit_no));
+    const tdp = el("td");
+    const nm = el("div","prod", r.product || "（明細待查）");
+    if (isNew(r) && !firstRun){
+      const b = el("span","newmark","新"); b.title = "本站在 " + r.first_seen + " 第一次看到這張證";
+      nm.appendChild(b);
+    }
+    tdp.appendChild(nm);
+    if (r.cancel_date) tdp.appendChild(el("div","small muted","已註銷 " + r.cancel_date));
+    tr.appendChild(tdp);
+    // 疫苗類的成分欄可以有十幾個 moiety，整串塞進表格會把品名擠成一行一個字。
+    // 表格只放前三個，完整清單在展開的明細裡——截斷要看得出來是截斷。
+    let moiText;
+    if (r.moieties.length > 3)
+      moiText = r.moieties.slice(0,3).join("、") + `⋯（共 ${r.moieties.length} 個）`;
+    else if (r.moieties.length)
+      moiText = r.moieties.join("、");
+    else
+      moiText = r.detail_status === "ok" ? "成分資料缺漏" : "—";
+    const tdm = el("td","moi", moiText);
+    if (r.moieties.length) tdm.title = r.moieties.join("、");
+    tr.appendChild(tdm);
+    const tdi = el("td","num", r.issue_date || "—");
+    if (r._reissue) tdi.appendChild(el("div","small muted","原始核發"));
+    tr.appendChild(tdi);
+    tr.appendChild(el("td","num", r.announced_on || "—"));
+    tr.appendChild(el("td","num", r.lag_days == null ? "—" : (r.lag_days>0?"+":"") + r.lag_days));
+    const tds = el("td"); tds.appendChild(pills(r)); tr.appendChild(tds);
+    tbody.appendChild(tr);
+
+    // 展開明細要能用鍵盤操作，不能只掛在 click 上。
+    tr.tabIndex = 0;
+    tr.setAttribute("role", "button");
+    tr.setAttribute("aria-expanded", "false");
+    let open = null;
+    const toggle = ()=>{
+      if (open){ open.remove(); open = null; tr.setAttribute("aria-expanded","false"); return; }
+      open = detailRow(r); tr.after(open); tr.setAttribute("aria-expanded","true");
+    };
+    tr.addEventListener("click", toggle);
+    tr.addEventListener("keydown", e=>{
+      if (e.key === "Enter" || e.key === " "){ e.preventDefault(); toggle(); }
+    });
+  });
+  $("#count").textContent = `顯示 ${shown} / ${rows.length} 張`;
+}
+["#q","#year","#sig","#combo"].forEach(s=>{
+  $(s).addEventListener($(s).tagName==="INPUT" && $(s).type==="search" ? "input" : "change", render);
+});
+
+/* ---------------- 無法解析 ---------------- */
+const ub = $("#unresolved");
+if (!D.unresolved.length){
+  ub.appendChild(el("p","small muted","目前沒有。"));
+} else {
+  D.unresolved.forEach(u=>{
+    const d = el("div"); d.style.padding="8px 0"; d.style.borderTop="1px solid var(--grid)";
+    d.appendChild(el("div","small", u.announced_on + "　" + u.title));
+    d.appendChild(el("div","small muted", u.note));
+    ub.appendChild(d);
+  });
+}
+
+/* ---------------- 控制 ---------------- */
+const cb = $("#controls");
+D.controls.forEach(c=>{
+  const r = el("div","ctrlrow");
+  const nm = el("div","nm");
+  nm.appendChild(el("div",null,c.name));
+  if (c.why) nm.appendChild(el("div","small muted", c.why));
+  r.appendChild(nm);
+  r.appendChild(el("div","st " + (c.pass?"pass":"fail"), c.pass ? "✓ 通過" : "✗ 失敗"));
+  cb.appendChild(r);
+});
+const can = D.canary;
+const cbox = $("#canary");
+const cp = el("span","pill");
+cp.appendChild(el("span","dot " + (can.state==="ok"?"good":can.state==="stale"?"nf":"pending")));
+cp.appendChild(el("span",null, can.state==="ok" ? "canary 正常" : can.state==="stale" ? "canary 失效" : "canary 未知"));
+cbox.appendChild(cp);
+cbox.appendChild(el("span",null," 衛部菌疫輸字第001328號（IBALIZUMAB）必須帶 07 新藥監視。"
+  + (can.queried_at ? "查詢日 " + can.queried_at + "。" : "") + can.note
+  + " 如果它有一天不再帶 07，代表上游語意變了，本站的結論就過期了。"));
+
+/* ---------------- 身分表 ---------------- */
+const it = $("#identity");
+it.innerHTML = "<thead><tr><th>訊號</th><th>它是什麼</th><th>它不是什麼</th></tr></thead>";
+const tb = el("tbody");
+Object.keys(SIGLABEL).forEach(k=>{
+  const tr = el("tr");
+  const th = el("th",null,SIGLABEL[k].label);
+  tr.appendChild(th);
+  tr.appendChild(el("td",null,SIGLABEL[k].is));
+  tr.appendChild(el("td",null,SIGLABEL[k].is_not));
+  tb.appendChild(tr);
+});
+const tr3 = el("tr");
+tr3.appendChild(el("th",null,"moiety 首見"));
+tr3.appendChild(el("td",null,"純粹的候選產生器，正規化字串的首見。"));
+tr3.appendChild(el("td",null,"沒有任何官方地位，而且本站沒有那份基線，所以這裡不算它。"));
+tb.appendChild(tr3);
+it.appendChild(tb);
+
+render();
+})();
+</script>
+</body>
+</html>

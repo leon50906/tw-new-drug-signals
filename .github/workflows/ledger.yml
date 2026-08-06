@@ -1,0 +1,81 @@
+name: 新藥訊號板
+
+# 每天台北時間 06:00 跑一次。這個清單不需要更密集：
+# 上游資料本身落後發證日 20–29 天（`M-45`），公告中位落後 69 天（`M-14`），
+# 而完整年度的公告則數是 15–32 則。一小時跑一次不會更早知道任何事，
+# 只會把流量指向政府主機。
+on:
+  schedule:
+    - cron: "0 22 * * *"      # 22:00 UTC = 06:00 Asia/Taipei
+  workflow_dispatch:
+    inputs:
+      budget:
+        description: "本輪最多查幾張明細（每張間隔 30 秒）"
+        default: "60"
+      skip_enrich:
+        description: "跳過明細查詢，只重抓公告清單並重建網頁"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# 兩輪同時跑會互相覆蓋 ledger。排隊，不取消——被取消的那一輪已經打過的
+# 請求就白打了。
+concurrency:
+  group: ledger
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 訊號二：整份公告清單。21 頁、間隔 3 秒。
+      # 筆數與頁面自己宣告的「共 N 筆」對不上就中止，不寫檔。
+      - name: 抓新成分新藥公告清單
+        run: python app/pipeline/fetch_nme_list.py
+
+      # 訊號一：逐張查明細，一次一筆、間隔 30 秒、每輪有預算上限。
+      # 422（我方被限流）會中止本輪並保留已完成的部分，下一輪從斷點續跑——
+      # 那不是失敗，所以這一步不讓工作流程紅掉。
+      - name: 補明細（節流）
+        if: ${{ github.event.inputs.skip_enrich != 'true' }}
+        run: python app/pipeline/enrich_details.py --budget ${{ github.event.inputs.budget || 60 }}
+
+      # 管線是在它最後一個介面上被驗證的。控制沒過就不產生輸出，
+      # 這一步失敗，舊的網頁維持原樣。
+      - name: 重建網頁（含控制）
+        run: python app/pipeline/build_site.py
+
+      - name: 存檔
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/data/ledger.json app/site/data.json app/site/index.html
+          git diff --staged --quiet && echo "# 沒有變化" && exit 0
+          git commit -m "ledger: $(date -u +%Y-%m-%d) 自動更新"
+          git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: app/site
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
