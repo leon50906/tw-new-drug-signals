@@ -2097,9 +2097,45 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638814614939064695&type=2&cid=48847",
      "note": "微功商行有限公司「利大嘉凝膠」(衛部藥輸字第028837號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52028837",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202883702",
+    "prodNameC": "利大嘉凝膠",
+    "prodNameE": "LEDAGA Gel",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5G 小兒/少數嚴重疾病藥品認定",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2024-12-16 00:00:00.000",
+    "oriIssueDate": "2024-12-16",
+    "validDate": "2029-12-16 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "Chlormethine Hydrochloride"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "L01AA05"
+     }
+    ],
+    "applicantName": "微功商行有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部菌疫輸字第001279號": {
    "permit_no": "衛部菌疫輸字第001279號",
@@ -2113,9 +2149,45 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638808621472212396&type=2&cid=48824",
      "note": "台灣協和麒麟股份有限公司「波替立久濃縮靜脈輸注液」(衛部菌疫輸字第001279號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=60001279",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA06000127905",
+    "prodNameC": "波替立久濃縮靜脈輸注液",
+    "prodNameE": "POTELIGEO 4 mg/mL concentrate for solution forinfusion",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5F 免除銜接性試驗",
+     "68 成品已完成元素不純物評估(Option 3)"
+    ],
+    "issueDate": "2025-02-27 00:00:00.000",
+    "oriIssueDate": "2025-02-27",
+    "validDate": "2030-02-27 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "MOGAMULIZUMAB"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "L01FX09"
+     }
+    ],
+    "applicantName": "台灣協和麒麟股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部菌疫輸字第001269號": {
    "permit_no": "衛部菌疫輸字第001269號",
@@ -2129,9 +2201,45 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638798059955387933&type=2&cid=48772",
      "note": "傑特貝林有限公司「恆傑凝注射劑」(衛部菌疫輸字第001269號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=60001269",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA06000126902",
+    "prodNameC": "恆傑凝注射劑",
+    "prodNameE": "Hemgenix",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "1D 須執行風險管理計畫",
+     "5G 小兒/少數嚴重疾病藥品認定"
+    ],
+    "issueDate": "2024-12-20 00:00:00.000",
+    "oriIssueDate": "2024-12-20",
+    "validDate": "2029-12-20 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "Etranacogene dezaparvovec "
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "B02BD16"
+     }
+    ],
+    "applicantName": "傑特貝林有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部菌疫輸字第001281號": {
    "permit_no": "衛部菌疫輸字第001281號",
@@ -2145,9 +2253,46 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638797149079194009&type=2&cid=48761",
      "note": "台灣安進藥品有限公司「安泰適注射劑 1 毫克、10毫克」(衛部菌疫輸字第001281-82號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=60001281",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA06000128105",
+    "prodNameC": "安泰適注射劑 1 毫克",
+    "prodNameE": "IMDELLTRA for Injection 1 mg",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "1S 須執行確認性療效臨床試驗",
+     "5G 小兒/少數嚴重疾病藥品認定",
+     "68 成品已完成元素不純物評估(Option 3)"
+    ],
+    "issueDate": "2025-02-26 00:00:00.000",
+    "oriIssueDate": "2025-02-26",
+    "validDate": "2030-02-26 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "Tarlatamab"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "L01FX33"
+     }
+    ],
+    "applicantName": "台灣安進藥品有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部菌疫輸字第001282號": {
    "permit_no": "衛部菌疫輸字第001282號",
@@ -2161,9 +2306,46 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638797149079194009&type=2&cid=48761",
      "note": "台灣安進藥品有限公司「安泰適注射劑 1 毫克、10毫克」(衛部菌疫輸字第001281-82號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=60001282",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA06000128207",
+    "prodNameC": "安泰適注射劑 10 毫克",
+    "prodNameE": "IMDELLTRA for Injection 10 mg",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "1S 須執行確認性療效臨床試驗",
+     "5G 小兒/少數嚴重疾病藥品認定",
+     "68 成品已完成元素不純物評估(Option 3)"
+    ],
+    "issueDate": "2025-02-26 00:00:00.000",
+    "oriIssueDate": "2025-02-26",
+    "validDate": "2030-02-26 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "Tarlatamab"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "L01FX33"
+     }
+    ],
+    "applicantName": "台灣安進藥品有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第028871號": {
    "permit_no": "衛部藥輸字第028871號",
@@ -2177,9 +2359,46 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638797056271087543&type=2&cid=48755",
      "note": "台灣必治妥施貴寶股份有限公司「達再樂膜衣錠200毫克」(衛部藥輸字第028871號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52028871",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202887102",
+    "prodNameC": "達再樂膜衣錠200毫克",
+    "prodNameE": "KRAZATI Film-coated Tablets 200 mg",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "1S 須執行確認性療效臨床試驗",
+     "5G 小兒/少數嚴重疾病藥品認定",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-02-08 00:00:00.000",
+    "oriIssueDate": "2025-02-08",
+    "validDate": "2030-02-08 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "Adagrasib"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "L01XX77"
+     }
+    ],
+    "applicantName": "台灣必治妥施貴寶股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部菌疫輸字第001278號": {
    "permit_no": "衛部菌疫輸字第001278號",
