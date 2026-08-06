@@ -101,7 +101,22 @@ input[type=search]{min-width:230px; flex:1 1 230px}
 .chk{display:inline-flex; align-items:center; gap:6px; font-size:13.5px; color:var(--ink-2);
      padding:6px 10px; border:1px solid var(--border); border-radius:8px; background:var(--surface); cursor:pointer}
 .chk input{margin:0}
-.count{font-size:13px; color:var(--ink-muted); margin-left:auto}
+.count{font-size:13px; color:var(--ink-muted); margin-left:auto; font-variant-numeric:tabular-nums}
+.chk select{border:none; background:transparent; padding:0 0 0 4px; font-size:13.5px; color:var(--ink)}
+
+/* ---------- 分頁 ---------- */
+.pager{display:flex; flex-wrap:wrap; align-items:center; gap:4px; margin-top:12px}
+.pgbtn{
+  font:inherit; font-size:13px; font-variant-numeric:tabular-nums;
+  min-width:32px; padding:6px 9px; border-radius:8px; cursor:pointer;
+  border:1px solid var(--border); background:var(--surface); color:var(--ink-2);
+}
+.pgbtn:hover:not(:disabled){background:var(--wash); color:var(--ink)}
+.pgbtn:disabled{opacity:.4; cursor:default}
+.pgbtn.on{background:var(--sig-nme); border-color:var(--sig-nme); color:#fff; font-weight:600}
+.pgbtn:focus-visible{outline:2px solid var(--sig-nme); outline-offset:2px}
+.pgsep{color:var(--ink-muted); padding:0 2px}
+.pgnote{margin-left:auto; font-size:12.5px; color:var(--ink-muted); font-variant-numeric:tabular-nums}
 
 /* ---------- table ---------- */
 .tablewrap{overflow-x:auto; border:1px solid var(--border); border-radius:12px; background:var(--surface)}
@@ -199,6 +214,15 @@ footer{margin-top:34px; padding-top:18px; border-top:1px solid var(--border); fo
       <option value="cancelled">已註銷</option>
     </select>
     <label class="chk"><input type="checkbox" id="combo"> 只看複方</label>
+    <label class="chk" for="perpage">每頁
+      <select id="perpage" aria-label="每頁顯示筆數">
+        <option value="10">10 筆</option>
+        <option value="20">20 筆</option>
+        <option value="50" selected>50 筆</option>
+        <option value="100">100 筆</option>
+        <option value="all">全部</option>
+      </select>
+    </label>
     <span class="count" id="count"></span>
   </div>
   <div class="tablewrap">
@@ -210,6 +234,7 @@ footer{margin-top:34px; padding-top:18px; border-top:1px solid var(--border); fo
       <tbody id="tbody"></tbody>
     </table>
   </div>
+  <nav class="pager" id="pager" aria-label="分頁" hidden></nav>
   <p class="small muted" style="margin-top:10px">點一列（或用鍵盤 Enter）展開明細。「落差」＝ 公告日 − 發證日，天數為正代表公告晚於發證。標「新」的是本站最近一次重跑才第一次看到的證——問的是「這一筆我以前見過嗎」，不是「發證日在最近幾天內」，所以一個公告晚了三個月的品項照樣會在它出現的那一次被標出來，而且帶著它真正的發證日。</p>
 </div>
 
@@ -500,10 +525,71 @@ function render(){
       if (e.key === "Enter" || e.key === " "){ e.preventDefault(); toggle(); }
     });
   });
-  $("#count").textContent = `顯示 ${shown} / ${rows.length} 張`;
+
+  $("#count").textContent = list.length
+    ? `第 ${start + 1}–${start + slice.length} 筆，符合 ${list.length} 張（全部 ${rows.length} 張）`
+    : `沒有符合的列（全部 ${rows.length} 張）`;
+  renderPager(pages, list.length);
 }
+
+/* 分頁列。272 張一次全鋪出來會讓「找某一張證」變成用瀏覽器搜尋，
+   所以預設分頁；要一次看完就選「全部」。 */
+const pager = $("#pager");
+function renderPager(pages, total){
+  pager.textContent = "";
+  if (pages <= 1){ pager.hidden = true; return; }
+  pager.hidden = false;
+  const btn = (label, target, disabled, aria)=>{
+    const b = el("button","pgbtn", label);
+    b.type = "button";
+    if (aria) b.setAttribute("aria-label", aria);
+    b.disabled = !!disabled;
+    if (!disabled) b.addEventListener("click", ()=>{ page = target; render(); scrollToTable(); });
+    pager.appendChild(b);
+  };
+  btn("‹‹", 1, page === 1, "第一頁");
+  btn("‹ 上一頁", page - 1, page === 1);
+
+  // 只印當前頁附近的頁碼，兩端各留一個，中間用刪節號。
+  const want = new Set([1, pages, page, page-1, page+1, page-2, page+2]);
+  let last = 0;
+  [...want].filter(n=>n>=1 && n<=pages).sort((a,b)=>a-b).forEach(n=>{
+    if (n - last > 1) pager.appendChild(el("span","pgsep","…"));
+    const b = el("button", "pgbtn" + (n === page ? " on" : ""), String(n));
+    b.type = "button";
+    if (n === page) b.setAttribute("aria-current", "page");
+    b.addEventListener("click", ()=>{ page = n; render(); scrollToTable(); });
+    pager.appendChild(b);
+    last = n;
+  });
+
+  btn("下一頁 ›", page + 1, page === pages);
+  btn("››", pages, page === pages, "最後一頁");
+  pager.appendChild(el("span","pgnote", `共 ${pages} 頁 / ${total} 張`));
+}
+
+function scrollToTable(){
+  const top = document.querySelector(".tablewrap").getBoundingClientRect().top + window.scrollY;
+  window.scrollTo({ top: top - 12, behavior: "auto" });
+}
+
+// 每頁筆數記在 localStorage：這是操作偏好，不是資料。
+const PER_KEY = "twnds.perpage";
+try {
+  const saved = localStorage.getItem(PER_KEY);
+  if (saved && [...$("#perpage").options].some(o=>o.value === saved)) $("#perpage").value = saved;
+} catch (e) { /* 隱私模式下 localStorage 會丟例外，忽略即可 */ }
+
+$("#perpage").addEventListener("change", ()=>{
+  try { localStorage.setItem(PER_KEY, $("#perpage").value); } catch (e) {}
+  page = 1; render();
+});
+
+// 換篩選條件就回到第一頁——留在第 8 頁然後看到空白，會讀成「沒有資料」。
 ["#q","#year","#sig","#combo"].forEach(s=>{
-  $(s).addEventListener($(s).tagName==="INPUT" && $(s).type==="search" ? "input" : "change", render);
+  const node = $(s);
+  const ev = node.tagName === "INPUT" && node.type === "search" ? "input" : "change";
+  node.addEventListener(ev, ()=>{ page = 1; render(); });
 });
 
 /* ---------------- 無法解析 ---------------- */
