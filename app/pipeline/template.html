@@ -418,29 +418,43 @@ function detailRow(r){
 }
 
 const tbody = $("#tbody");
-function render(){
+
+function matches(r){
   const q = $("#q").value.trim().toLowerCase();
   const y = $("#year").value;
   const sg = $("#sig").value;
   const combo = $("#combo").checked;
+  if (y && (r.announced_on||"").slice(0,4) !== y) return false;
+  if (combo && !r.is_combination) return false;
+  if (sg === "07" && !r.signals.includes("restraint_07")) return false;
+  if (sg === "no07" && !(r.detail_status==="ok" && !r.signals.includes("restraint_07"))) return false;
+  if (sg === "pending" && r.detail_status !== "pending") return false;
+  if (sg === "notfound" && r.detail_status !== "not_found") return false;
+  if (sg === "new" && !(isNew(r) && !firstRun)) return false;
+  if (sg === "reissue" && !r._reissue) return false;
+  if (sg === "cancelled" && !r.cancel_date) return false;
+  if (q){
+    const hay = [r.permit_no, r.product, r.product_en, r.applicant,
+                 r.moieties.join(" "), r.announcement_title].join(" ").toLowerCase();
+    if (!hay.includes(q)) return false;
+  }
+  return true;
+}
+
+let page = 1;
+
+function render(){
+  const list = rows.filter(matches);
+  const perRaw = $("#perpage").value;
+  const per = perRaw === "all" ? Math.max(list.length, 1) : +perRaw;
+  const pages = Math.max(1, Math.ceil(list.length / per));
+  if (page > pages) page = pages;
+  if (page < 1) page = 1;
+  const start = (page - 1) * per;
+  const slice = list.slice(start, start + per);
+
   tbody.textContent = "";
-  let shown = 0;
-  rows.forEach(r=>{
-    if (y && (r.announced_on||"").slice(0,4) !== y) return;
-    if (combo && !r.is_combination) return;
-    if (sg === "07" && !r.signals.includes("restraint_07")) return;
-    if (sg === "no07" && !(r.detail_status==="ok" && !r.signals.includes("restraint_07"))) return;
-    if (sg === "pending" && r.detail_status !== "pending") return;
-    if (sg === "notfound" && r.detail_status !== "not_found") return;
-    if (sg === "new" && !(isNew(r) && !firstRun)) return;
-    if (sg === "reissue" && !r._reissue) return;
-    if (sg === "cancelled" && !r.cancel_date) return;
-    if (q){
-      const hay = [r.permit_no, r.product, r.product_en, r.applicant,
-                   r.moieties.join(" "), r.announcement_title].join(" ").toLowerCase();
-      if (!hay.includes(q)) return;
-    }
-    shown++;
+  slice.forEach(r=>{
     const tr = el("tr","row");
     tr.appendChild(el("td","pno", r.permit_no));
     const tdp = el("td");
