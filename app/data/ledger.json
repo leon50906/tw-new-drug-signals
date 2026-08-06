@@ -858,9 +858,46 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639130704585694044&type=2&cid=50705",
      "note": "台灣東洋藥品工業股份有限公司「普肺康膜衣錠55毫克」(衛部藥製字第062094號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=51062094",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHY05106209401",
+    "prodNameC": "普肺康膜衣錠55毫克",
+    "prodNameE": "Pulmivex Film-Coated Tablets 55 mg",
+    "restraintItemsCode": [
+     "01 國 產",
+     "07 新藥監視",
+     "1E 須執行Phase IV Study",
+     "5F 免除銜接性試驗",
+     "68 成品已完成元素不純物評估(Option 3)"
+    ],
+    "issueDate": "2026-01-08 00:00:00.000",
+    "oriIssueDate": "2026-01-08",
+    "validDate": "2031-01-08 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "Aumolertinib Mesilate"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "L01EB11"
+     }
+    ],
+    "applicantName": "台灣東洋藥品工業股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部菌疫輸字第001309號": {
    "permit_no": "衛部菌疫輸字第001309號",
@@ -874,9 +911,46 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639130702189407875&type=2&cid=50704",
      "note": "美商默沙東藥廠股份有限公司台灣分公司「威納肺凍晶注射劑50毫克／毫升」(衛部菌疫輸字第001309號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=60001309",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA06000130901",
+    "prodNameC": "威納肺凍晶注射劑50毫克/毫升",
+    "prodNameE": "WINREVAIR powder for solution for injection 50mg/mL",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5F 免除銜接性試驗",
+     "68 成品已完成元素不純物評估(Option 3)"
+    ],
+    "issueDate": "2026-01-12 00:00:00.000",
+    "oriIssueDate": "2026-01-12",
+    "validDate": "2031-01-12 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "SOTATERCEPT",
+     "SOTATERCEPT"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "C02KX06"
+     }
+    ],
+    "applicantName": "美商默沙東藥廠股份有限公司台灣分公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部菌疫輸字第001280號": {
    "permit_no": "衛部菌疫輸字第001280號",
@@ -890,9 +964,44 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639130700264510449&type=2&cid=50703",
      "note": "莫德納台灣股份有限公司「莫維亞呼吸道融合病毒疫苗」(衛部菌疫輸字第001280號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=60001280",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA06000128003",
+    "prodNameC": "莫維亞呼吸道融合病毒疫苗",
+    "prodNameE": "mRESVIA pre-filled syringe",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5F 免除銜接性試驗"
+    ],
+    "issueDate": "2025-02-12 00:00:00.000",
+    "oriIssueDate": "2025-02-12",
+    "validDate": "2030-02-12 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "mRNA-1345 LNP"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "J07BX05"
+     }
+    ],
+    "applicantName": "莫德納台灣股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第028909號": {
    "permit_no": "衛部藥輸字第028909號",
@@ -906,9 +1015,46 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639013903835546316&type=2&cid=50024",
      "note": "再鼎台灣醫藥有限公司「歐格樂膠囊40毫克」(衛部藥輸字第028909號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52028909",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202890901",
+    "prodNameC": "歐格樂膠囊40毫克",
+    "prodNameE": "AUGTYRO Capsules 40 mg",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "1S 須執行確認性療效臨床試驗",
+     "5G 小兒/少數嚴重疾病藥品認定",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-04-11 00:00:00.000",
+    "oriIssueDate": "2025-04-11",
+    "validDate": "2030-04-11 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "REPOTRECTINIB"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "L01EX28"
+     }
+    ],
+    "applicantName": "再鼎台灣醫藥有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第029023號": {
    "permit_no": "衛部藥輸字第029023號",
@@ -922,9 +1068,45 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638996584696049318&type=2&cid=49916",
      "note": "健喬信元醫藥生技股份有限公司「雅絲媞膜衣錠 100 毫克」(衛部藥輸字第029023號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52029023",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202902303",
+    "prodNameC": "雅絲媞膜衣錠 100 毫克",
+    "prodNameE": "Yselty Film-Coated Tablets 100 mg",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5F 免除銜接性試驗",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-10-09 00:00:00.000",
+    "oriIssueDate": "2025-10-09",
+    "validDate": "2030-10-09 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "LINZAGOLIX CHOLINE"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "H01CC04"
+     }
+    ],
+    "applicantName": "健喬信元醫藥生技股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第028924號": {
    "permit_no": "衛部藥輸字第028924號",
@@ -938,9 +1120,46 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638925059514714731&type=2&cid=49563",
      "note": "台灣必治妥施寶貴股份有限公司「可心歐膠囊2.5、5、10、15毫克」(衛部藥輸字第028924-27號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52028924",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202892400",
+    "prodNameC": "可心歐膠囊2.5毫克",
+    "prodNameE": "Camzyos Capsules 2.5 mg",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "1D 須執行風險管理計畫",
+     "5F 免除銜接性試驗",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-06-17 00:00:00.000",
+    "oriIssueDate": "2025-06-17",
+    "validDate": "2030-06-17 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "MAVACAMTEN"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "C01EB24"
+     }
+    ],
+    "applicantName": "台灣必治妥施貴寶股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第028925號": {
    "permit_no": "衛部藥輸字第028925號",
@@ -954,9 +1173,46 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638925059514714731&type=2&cid=49563",
      "note": "台灣必治妥施寶貴股份有限公司「可心歐膠囊2.5、5、10、15毫克」(衛部藥輸字第028924-27號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52028925",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202892502",
+    "prodNameC": "可心歐膠囊5毫克",
+    "prodNameE": "Camzyos Capsules 5 mg",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "1D 須執行風險管理計畫",
+     "5F 免除銜接性試驗",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-06-17 00:00:00.000",
+    "oriIssueDate": "2025-06-17",
+    "validDate": "2030-06-17 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "MAVACAMTEN"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "C01EB24"
+     }
+    ],
+    "applicantName": "台灣必治妥施貴寶股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第028926號": {
    "permit_no": "衛部藥輸字第028926號",
@@ -970,9 +1226,46 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638925059514714731&type=2&cid=49563",
      "note": "台灣必治妥施寶貴股份有限公司「可心歐膠囊2.5、5、10、15毫克」(衛部藥輸字第028924-27號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52028926",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202892601",
+    "prodNameC": "可心歐膠囊10毫克",
+    "prodNameE": "Camzyos Capsules 10 mg",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "1D 須執行風險管理計畫",
+     "5F 免除銜接性試驗",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-06-17 00:00:00.000",
+    "oriIssueDate": "2025-06-17",
+    "validDate": "2030-06-17 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "MAVACAMTEN"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "C01EB24"
+     }
+    ],
+    "applicantName": "台灣必治妥施貴寶股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第028927號": {
    "permit_no": "衛部藥輸字第028927號",
@@ -986,9 +1279,46 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638925059514714731&type=2&cid=49563",
      "note": "台灣必治妥施寶貴股份有限公司「可心歐膠囊2.5、5、10、15毫克」(衛部藥輸字第028924-27號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52028927",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202892703",
+    "prodNameC": "可心歐膠囊15毫克",
+    "prodNameE": "Camzyos Capsules 15 mg",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "1D 須執行風險管理計畫",
+     "5F 免除銜接性試驗",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-06-17 00:00:00.000",
+    "oriIssueDate": "2025-06-17",
+    "validDate": "2030-06-17 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "MAVACAMTEN"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "C01EB24"
+     }
+    ],
+    "applicantName": "台灣必治妥施貴寶股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第028977號": {
    "permit_no": "衛部藥輸字第028977號",
@@ -1002,9 +1332,45 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638901005987908646&type=2&cid=49417",
      "note": "嬌生股份有限公司「力安莎膜衣錠80毫克、240毫克」(衛部藥輸字第028977-78號 )",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52028977",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202897705",
+    "prodNameC": "力安莎膜衣錠80毫克",
+    "prodNameE": "Lazcluze film-coated tablets 80 mg",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5F 免除銜接性試驗",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-06-24 00:00:00.000",
+    "oriIssueDate": "2025-06-24",
+    "validDate": "2030-06-24 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "LAZERTINIB MESYLATE MONOHYDRATE"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "L01EB09"
+     }
+    ],
+    "applicantName": "嬌生股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第028978號": {
    "permit_no": "衛部藥輸字第028978號",
@@ -1018,9 +1384,45 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638901005987908646&type=2&cid=49417",
      "note": "嬌生股份有限公司「力安莎膜衣錠80毫克、240毫克」(衛部藥輸字第028977-78號 )",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52028978",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202897807",
+    "prodNameC": "力安莎膜衣錠240毫克",
+    "prodNameE": "Lazcluze film-coated tablets 240 mg",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5F 免除銜接性試驗",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-06-24 00:00:00.000",
+    "oriIssueDate": "2025-06-24",
+    "validDate": "2030-06-24 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "LAZERTINIB MESYLATE MONOHYDRATE"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "L01EB09"
+     }
+    ],
+    "applicantName": "嬌生股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第028944號": {
    "permit_no": "衛部藥輸字第028944號",
@@ -1034,9 +1436,45 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638901000392075146&type=2&cid=49416",
      "note": "羅氏大藥廠股份有限公司「癌妥飛 3毫克膜衣錠、9毫克膜衣錠」(衛部藥輸字第028944-45)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52028944",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202894403",
+    "prodNameC": "癌妥飛3毫克膜衣錠",
+    "prodNameE": "Itovebi 3 mg film-coated tablets",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5F 免除銜接性試驗",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-06-02 00:00:00.000",
+    "oriIssueDate": "2025-06-02",
+    "validDate": "2030-06-02 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "INAVOLISIB"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "L01EM"
+     }
+    ],
+    "applicantName": "羅氏大藥廠股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第028945號": {
    "permit_no": "衛部藥輸字第028945號",
@@ -1050,9 +1488,45 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638901000392075146&type=2&cid=49416",
      "note": "羅氏大藥廠股份有限公司「癌妥飛 3毫克膜衣錠、9毫克膜衣錠」(衛部藥輸字第028944-45)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52028945",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202894505",
+    "prodNameC": "癌妥飛9毫克膜衣錠",
+    "prodNameE": "Itovebi 9 mg film-coated tablets",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5F 免除銜接性試驗",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-06-02 00:00:00.000",
+    "oriIssueDate": "2025-06-02",
+    "validDate": "2030-06-02 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "INAVOLISIB"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "L01EM"
+     }
+    ],
+    "applicantName": "羅氏大藥廠股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部菌疫輸字第001290號": {
    "permit_no": "衛部菌疫輸字第001290號",
@@ -1066,9 +1540,41 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638900991734876302&type=2&cid=49412",
      "note": "台灣諾和諾德藥品股份有限公司「全艾凝注射劑」、「全艾凝注射劑60毫克／1.5毫升」、「全艾凝注射劑15毫克／1.5毫升」(衛部菌疫輸字第001290-92號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=60001290",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA06000129006",
+    "prodNameC": "全艾凝注射劑",
+    "prodNameE": "Alhemo solution for injection in pre-filled pen",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "1D 須執行風險管理計畫",
+     "5G 小兒/少數嚴重疾病藥品認定",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-06-17 00:00:00.000",
+    "oriIssueDate": "2025-06-17",
+    "validDate": "2030-06-17 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "Concizumab"
+    ],
+    "atcList": [],
+    "applicantName": "台灣諾和諾德藥品股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部菌疫輸字第001291號": {
    "permit_no": "衛部菌疫輸字第001291號",
@@ -1082,9 +1588,41 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638900991734876302&type=2&cid=49412",
      "note": "台灣諾和諾德藥品股份有限公司「全艾凝注射劑」、「全艾凝注射劑60毫克／1.5毫升」、「全艾凝注射劑15毫克／1.5毫升」(衛部菌疫輸字第001290-92號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=60001291",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA06000129108",
+    "prodNameC": "全艾凝注射劑60毫克/1.5毫升",
+    "prodNameE": "Alhemo 60mg/1.5mL solution for injection in pre-filled pen",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "1D 須執行風險管理計畫",
+     "5G 小兒/少數嚴重疾病藥品認定",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-06-17 00:00:00.000",
+    "oriIssueDate": "2025-06-17",
+    "validDate": "2030-06-17 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "Concizumab"
+    ],
+    "atcList": [],
+    "applicantName": "台灣諾和諾德藥品股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部菌疫輸字第001292號": {
    "permit_no": "衛部菌疫輸字第001292號",
@@ -1098,9 +1636,41 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638900991734876302&type=2&cid=49412",
      "note": "台灣諾和諾德藥品股份有限公司「全艾凝注射劑」、「全艾凝注射劑60毫克／1.5毫升」、「全艾凝注射劑15毫克／1.5毫升」(衛部菌疫輸字第001290-92號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=60001292",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA06000129200",
+    "prodNameC": "全艾凝注射劑15毫克/1.5毫升",
+    "prodNameE": "Alhemo 15mg/1.5mL solution for injection in pre-filled pen",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "1D 須執行風險管理計畫",
+     "5G 小兒/少數嚴重疾病藥品認定",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-06-17 00:00:00.000",
+    "oriIssueDate": "2025-06-17",
+    "validDate": "2030-06-17 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "Concizumab"
+    ],
+    "atcList": [],
+    "applicantName": "台灣諾和諾德藥品股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第028886號": {
    "permit_no": "衛部藥輸字第028886號",
@@ -1114,9 +1684,45 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638889629636255112&type=2&cid=49343",
      "note": "台灣武田藥品工業股份有限公司「伏腸剋膠囊1毫克、5毫克」(衛部藥輸字第028886-87號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52028886",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202888602",
+    "prodNameC": "伏腸剋膠囊1毫克",
+    "prodNameE": "FRUZAQLA capsules 1 mg",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5F 免除銜接性試驗",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-02-21 00:00:00.000",
+    "oriIssueDate": "2025-02-21",
+    "validDate": "2030-02-21 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "FRUQUINTINIB"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "L01EK04"
+     }
+    ],
+    "applicantName": "台灣武田藥品工業股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第028887號": {
    "permit_no": "衛部藥輸字第028887號",
@@ -1130,9 +1736,45 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638889629636255112&type=2&cid=49343",
      "note": "台灣武田藥品工業股份有限公司「伏腸剋膠囊1毫克、5毫克」(衛部藥輸字第028886-87號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52028887",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202888704",
+    "prodNameC": "伏腸剋膠囊5毫克",
+    "prodNameE": "FRUZAQLA capsules 5 mg",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5F 免除銜接性試驗",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-02-21 00:00:00.000",
+    "oriIssueDate": "2025-02-21",
+    "validDate": "2030-02-21 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "FRUQUINTINIB"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "L01EK04"
+     }
+    ],
+    "applicantName": "台灣武田藥品工業股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第028938號": {
    "permit_no": "衛部藥輸字第028938號",
@@ -1146,9 +1788,40 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638889621362121853&type=2&cid=49342",
      "note": "台灣住友醫藥股份有限公司「健泰適膜衣錠75毫克」(衛部藥輸字第028938號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52028938",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202893808",
+    "prodNameC": "健泰適膜衣錠75毫克",
+    "prodNameE": "GEMTESA tablets 75 mg",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5F 免除銜接性試驗",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2025-06-19 00:00:00.000",
+    "oriIssueDate": "2025-06-19",
+    "validDate": "2030-06-19 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "Vibegron"
+    ],
+    "atcList": [],
+    "applicantName": "台灣丸紅醫藥股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部菌疫輸字第001264號": {
    "permit_no": "衛部菌疫輸字第001264號",
@@ -1162,9 +1835,46 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638859596200605196&type=2&cid=49169",
      "note": "友華生技醫藥股份有限公司「杏瘤泰凍晶注射劑10毫克」(衛部菌疫輸字第001264號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=60001264",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA06000126405",
+    "prodNameC": "杏瘤泰凍晶注射劑10毫克",
+    "prodNameE": "Zynlonta 10 mg powder for concentrate for solution for infusion",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "1Q 不得輸入",
+     "5F 免除銜接性試驗",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2024-09-05 00:00:00.000",
+    "oriIssueDate": "2024-09-05",
+    "validDate": "2029-09-05 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "Loncastuximab tesirine"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "L01FX22"
+     }
+    ],
+    "applicantName": "友華生技醫藥股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部藥輸字第028914號": {
    "permit_no": "衛部藥輸字第028914號",
@@ -1178,9 +1888,45 @@
      "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638841412578708546&type=2&cid=49044",
      "note": "富富企業股份有限公司「普優顯注射液」(衛部藥輸字第028914號)",
      "observed_at": "2026-08-06"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-06",
+     "basis": "licSearch licBaseId=52028914",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-06"
     }
    ],
-   "detail": null
+   "detail": {
+    "certNo": "DHA05202891407",
+    "prodNameC": "普優顯注射液",
+    "prodNameE": "ProHance 279.3 mg/ml solution for infusion",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5F 免除銜接性試驗",
+     "68 成品已完成元素不純物評估(Option 3)"
+    ],
+    "issueDate": "2025-04-09 00:00:00.000",
+    "oriIssueDate": "2025-04-09",
+    "validDate": "2030-04-09 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "Gadoteridol"
+    ],
+    "atcList": [
+     {
+      "isMain": "1",
+      "atcCode": "V08CA04"
+     }
+    ],
+    "applicantName": "富富企業股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-06"
+   }
   },
   "衛部菌疫輸字第001287號": {
    "permit_no": "衛部菌疫輸字第001287號",
