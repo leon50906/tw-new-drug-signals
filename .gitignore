@@ -4,3 +4,7 @@ __pycache__/
 .pytest_cache/
 .venv/
 venv/
+
+# Obsidian 的工作區設定與外掛。這個資料夾同時是一個 vault，
+# 但編輯器狀態不屬於這個 repo。
+.obsidian/
