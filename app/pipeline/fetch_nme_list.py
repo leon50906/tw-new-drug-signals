@@ -47,9 +47,13 @@ _UA = "tw-new-drug-signals-ledger/1.0 (+https://github.com/leon50906/tw-new-drug
 
 #: 一列 = 序號 + 標題（含 PDF 連結）+ 發布日期。來源的 <tr> 沒有收尾標籤，
 #: 所以錨定在三個 <td> 的形狀上，不靠 </tr>。
+#:
+#: 最近幾則公告的 <a> 前面會多一個「new」小圖示（<img src=".../new.gif">），
+#: 過幾天就消失。所以連結前允許任意數量的 <img>——不能只認「<td> 後面立刻是
+#: <a>」，那會讓最新的一則悄悄消失（正是筆數對不上要抓的那種漏抓）。
 _ROW_RE = re.compile(
     r"<td class='alignCenter' >(\d+)</td>"
-    r"\s*<td[^>]*>\s*<a href=\"([^\"]+)\"[^>]*>(.*?)</a>\s*</td>"
+    r"\s*<td[^>]*>\s*(?:<img[^>]*>\s*)*<a href=\"([^\"]+)\"[^>]*>(.*?)</a>\s*</td>"
     r"\s*<td class='alignCenter' >(\d{4}-\d{2}-\d{2})</td>",
     re.S,
 )
