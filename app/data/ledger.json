@@ -14028,1241 +14028,1294 @@
     "status": "ok",
     "queried_at": "2026-08-06"
    }
+  },
+  "衛部藥輸字第029131號": {
+   "permit_no": "衛部藥輸字第029131號",
+   "lic_id": "52029131",
+   "first_seen": "2026-08-21",
+   "reported": false,
+   "evidence": [
+    {
+     "signal": "nme_report",
+     "confirmed_at": "2026-08-20",
+     "basis": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639228247780888517&type=2&cid=51777",
+     "note": "台灣禮來股份有限公司「盈乳樂膜衣錠200毫克」(衛部藥輸字第029131號)",
+     "observed_at": "2026-08-21"
+    },
+    {
+     "signal": "restraint_07",
+     "confirmed_at": "2026-08-21",
+     "basis": "licSearch licBaseId=52029131",
+     "note": "查詢當下明細的 restraintItemsCode 含碼 07",
+     "observed_at": "2026-08-21"
+    }
+   ],
+   "detail": {
+    "certNo": "DHA05202913106",
+    "prodNameC": "盈乳樂膜衣錠200毫克",
+    "prodNameE": "Inluriyo 200 mg Film-Coated Tablets",
+    "restraintItemsCode": [
+     "02 輸 入",
+     "07 新藥監視",
+     "5F 免除銜接性試驗",
+     "67 成品已完成元素不純物評估(Option 1、2a、2b)"
+    ],
+    "issueDate": "2026-05-15 00:00:00.000",
+    "oriIssueDate": "2026-05-15",
+    "validDate": "2031-05-15 00:00:00.000",
+    "licStatus": "1",
+    "cancelDate": null,
+    "cancelReason": [],
+    "ingredientsDesc": [
+     "IMLUNESTRANT TOSYLATE"
+    ],
+    "atcList": [],
+    "applicantName": "台灣禮來股份有限公司",
+    "makerName": null,
+    "status": "ok",
+    "queried_at": "2026-08-21"
+   }
   }
  },
  "announcements": [
   {
    "seq": 1,
+   "title": "台灣禮來股份有限公司「盈乳樂膜衣錠200毫克」(衛部藥輸字第029131號)",
+   "announced_on": "2026-08-20",
+   "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639228247780888517&type=2&cid=51777"
+  },
+  {
+   "seq": 2,
    "title": "友華生技醫藥股份有限公司「佐加洛注射劑」(衛部菌疫輸字第001328號)",
    "announced_on": "2026-07-24",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639205060054068007&type=2&cid=51371"
   },
   {
-   "seq": 2,
+   "seq": 3,
    "title": "台灣諾華股份有限公司「穩腎優0.75毫克膜衣錠」(衛部藥輸字第029157號)",
    "announced_on": "2026-07-09",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639191946211810335&type=2&cid=51304"
   },
   {
-   "seq": 3,
+   "seq": 4,
    "title": "台灣參天製藥股份有限公司「絡可坦點眼液」(衛部藥輸字第029166號)",
    "announced_on": "2026-07-06",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639189562496689713&type=2&cid=51282"
   },
   {
-   "seq": 4,
+   "seq": 5,
    "title": "莫德納台灣股份有限公司「莫德適新型冠狀病毒疫苗」(衛部菌疫輸字第001322號)",
    "announced_on": "2026-07-01",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639185219401917118&type=2&cid=51241"
   },
   {
-   "seq": 5,
+   "seq": 6,
    "title": "美商默沙東藥廠股份有限公司台灣分公司「肺普息 肺炎鏈球菌21價結合型疫苗」(衛部菌疫輸字第001319號)",
    "announced_on": "2026-07-01",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639185214406300868&type=2&cid=51238"
   },
   {
-   "seq": 6,
+   "seq": 7,
    "title": "賽諾菲股份有限公司「凡特凝預充填注射筆50毫克」(衛部藥輸字第029075號)",
    "announced_on": "2026-07-01",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639185181670463558&type=2&cid=51235"
   },
   {
-   "seq": 7,
+   "seq": 8,
    "title": "賽諾菲股份有限公司「凡特凝皮下注射液20毫克」(衛部藥輸字第029074號)",
    "announced_on": "2026-07-01",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639185179889192841&type=2&cid=51234"
   },
   {
-   "seq": 8,
+   "seq": 9,
    "title": "瑞士商艾伯維藥品有限公司台灣分公司「艾樂延靜脈輸注液5 mgmL」(衛部菌疫輸字第001321號)",
    "announced_on": "2026-06-08",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639165376903008741&type=2&cid=50874"
   },
   {
-   "seq": 9,
+   "seq": 10,
    "title": "輝瑞大藥廠股份有限公司「友勝停預填充注射筆150毫克」(衛部菌疫輸字第001303號)",
    "announced_on": "2026-06-08",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639165367221198672&type=2&cid=50873"
   },
   {
-   "seq": 10,
+   "seq": 11,
    "title": "荷商葛蘭素史克藥廠股份有限公司台灣分公司「倍力銳凍晶注射劑」(衛部菌疫輸字第001311號)",
    "announced_on": "2026-06-08",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639165381943278276&type=2&cid=50872"
   },
   {
-   "seq": 11,
+   "seq": 12,
    "title": "台灣優時比貿易有限公司「肌挺力注射液劑140毫克／毫升」(衛部菌疫輸字第001308號)",
    "announced_on": "2026-06-08",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639165364369424880&type=2&cid=50871"
   },
   {
-   "seq": 12,
+   "seq": 13,
    "title": "台灣優時比貿易有限公司「本能適注射液160毫克／毫升」(衛部菌疫輸字第001289號)",
    "announced_on": "2026-06-08",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639165362880747017&type=2&cid=50870"
   },
   {
-   "seq": 13,
+   "seq": 14,
    "title": "輝瑞大藥廠股份有限公司「杜凱莎50、150毫克膜衣錠」(衛部藥輸字第029081-82號)",
    "announced_on": "2026-04-29",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639130714756770208&type=2&cid=50708"
   },
   {
-   "seq": 14,
+   "seq": 15,
    "title": "台灣諾華股份有限公司「樂鎵美25微克放射性顯影劑製備試劑組」(衛部藥輸字第R00108號)",
    "announced_on": "2026-04-29",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639130709744866860&type=2&cid=50707"
   },
   {
-   "seq": 15,
+   "seq": 16,
    "title": "荷商葛蘭素史克藥廠股份有限公司台灣分公司「健沛利濃縮輸注液50毫克／毫升」(衛部菌疫輸字第001310號)",
    "announced_on": "2026-04-29",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639130706659618277&type=2&cid=50706"
   },
   {
-   "seq": 16,
+   "seq": 17,
    "title": "台灣東洋藥品工業股份有限公司「普肺康膜衣錠55毫克」(衛部藥製字第062094號)",
    "announced_on": "2026-04-29",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639130704585694044&type=2&cid=50705"
   },
   {
-   "seq": 17,
+   "seq": 18,
    "title": "美商默沙東藥廠股份有限公司台灣分公司「威納肺凍晶注射劑50毫克／毫升」(衛部菌疫輸字第001309號)",
    "announced_on": "2026-04-29",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639130702189407875&type=2&cid=50704"
   },
   {
-   "seq": 18,
+   "seq": 19,
    "title": "莫德納台灣股份有限公司「莫維亞呼吸道融合病毒疫苗」(衛部菌疫輸字第001280號)",
    "announced_on": "2026-04-29",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639130700264510449&type=2&cid=50703"
   },
   {
-   "seq": 19,
+   "seq": 20,
    "title": "再鼎台灣醫藥有限公司「歐格樂膠囊40毫克」(衛部藥輸字第028909號)",
    "announced_on": "2025-12-15",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639013903835546316&type=2&cid=50024"
   },
   {
-   "seq": 20,
+   "seq": 21,
    "title": "健喬信元醫藥生技股份有限公司「雅絲媞膜衣錠 100 毫克」(衛部藥輸字第029023號)",
    "announced_on": "2025-11-25",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638996584696049318&type=2&cid=49916"
   },
   {
-   "seq": 21,
+   "seq": 22,
    "title": "台灣必治妥施寶貴股份有限公司「可心歐膠囊2.5、5、10、15毫克」(衛部藥輸字第028924-27號)",
    "announced_on": "2025-09-03",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638925059514714731&type=2&cid=49563"
   },
   {
-   "seq": 22,
+   "seq": 23,
    "title": "嬌生股份有限公司「力安莎膜衣錠80毫克、240毫克」(衛部藥輸字第028977-78號 )",
    "announced_on": "2025-08-06",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638901005987908646&type=2&cid=49417"
   },
   {
-   "seq": 23,
+   "seq": 24,
    "title": "羅氏大藥廠股份有限公司「癌妥飛 3毫克膜衣錠、9毫克膜衣錠」(衛部藥輸字第028944-45)",
    "announced_on": "2025-08-06",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638901000392075146&type=2&cid=49416"
   },
   {
-   "seq": 24,
+   "seq": 25,
    "title": "台灣諾和諾德藥品股份有限公司「全艾凝注射劑」、「全艾凝注射劑60毫克／1.5毫升」、「全艾凝注射劑15毫克／1.5毫升」(衛部菌疫輸字第001290-92號)",
    "announced_on": "2025-08-06",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638900991734876302&type=2&cid=49412"
   },
   {
-   "seq": 25,
+   "seq": 26,
    "title": "台灣武田藥品工業股份有限公司「伏腸剋膠囊1毫克、5毫克」(衛部藥輸字第028886-87號)",
    "announced_on": "2025-07-24",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638889629636255112&type=2&cid=49343"
   },
   {
-   "seq": 26,
+   "seq": 27,
    "title": "台灣住友醫藥股份有限公司「健泰適膜衣錠75毫克」(衛部藥輸字第028938號)",
    "announced_on": "2025-07-24",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638889621362121853&type=2&cid=49342"
   },
   {
-   "seq": 27,
+   "seq": 28,
    "title": "友華生技醫藥股份有限公司「杏瘤泰凍晶注射劑10毫克」(衛部菌疫輸字第001264號)",
    "announced_on": "2025-06-19",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638859596200605196&type=2&cid=49169"
   },
   {
-   "seq": 28,
+   "seq": 29,
    "title": "富富企業股份有限公司「普優顯注射液」(衛部藥輸字第028914號)",
    "announced_on": "2025-05-29",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638841412578708546&type=2&cid=49044"
   },
   {
-   "seq": 29,
+   "seq": 30,
    "title": "台灣諾和諾德藥品股份有限公司「週胰保諾特筆」(衛部菌疫輸字第001287號)",
    "announced_on": "2025-05-29",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638841409478716744&type=2&cid=49043"
   },
   {
-   "seq": 30,
+   "seq": 31,
    "title": "新加坡商希米科亞太股份有限公司台灣分公司「蕾羅克錠200毫克」(衛部藥輸字第028859號)",
    "announced_on": "2025-04-28",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638814623138665854&type=2&cid=48851"
   },
   {
-   "seq": 31,
+   "seq": 32,
    "title": "臺灣阿斯特捷利康股份有限公司「能伏鼻三價鼻噴式流感疫苗」(衛部菌疫輸字第001286號)",
    "announced_on": "2025-04-28",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638814617323896286&type=2&cid=48850"
   },
   {
-   "seq": 32,
+   "seq": 33,
    "title": "微功商行有限公司「利大嘉凝膠」(衛部藥輸字第028837號)",
    "announced_on": "2025-04-28",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638814614939064695&type=2&cid=48847"
   },
   {
-   "seq": 33,
+   "seq": 34,
    "title": "台灣協和麒麟股份有限公司「波替立久濃縮靜脈輸注液」(衛部菌疫輸字第001279號)",
    "announced_on": "2025-04-21",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638808621472212396&type=2&cid=48824"
   },
   {
-   "seq": 34,
+   "seq": 35,
    "title": "傑特貝林有限公司「恆傑凝注射劑」(衛部菌疫輸字第001269號)",
    "announced_on": "2025-04-09",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638798059955387933&type=2&cid=48772"
   },
   {
-   "seq": 35,
+   "seq": 36,
    "title": "台灣安進藥品有限公司「安泰適注射劑 1 毫克、10毫克」(衛部菌疫輸字第001281-82號)",
    "announced_on": "2025-04-08",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638797149079194009&type=2&cid=48761"
   },
   {
-   "seq": 36,
+   "seq": 37,
    "title": "台灣必治妥施貴寶股份有限公司「達再樂膜衣錠200毫克」(衛部藥輸字第028871號)",
    "announced_on": "2025-04-08",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638797056271087543&type=2&cid=48755"
   },
   {
-   "seq": 37,
+   "seq": 38,
    "title": "台灣安斯泰來製藥股份有限公司「威絡益凍晶注射劑100毫克」(衛部菌疫輸字第001278號)",
    "announced_on": "2025-04-02",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638791891798449489&type=2&cid=48729"
   },
   {
-   "seq": 38,
+   "seq": 39,
    "title": "衛采製藥股份有限公司「樂意保濃縮靜脈輸注液」(衛部菌疫輸字第001273號)",
    "announced_on": "2025-03-28",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638814628010700126&type=2&cid=48707"
   },
   {
-   "seq": 39,
+   "seq": 40,
    "title": "輝瑞大藥廠股份有限公司「沛穩因濃縮輸注液」(衛部菌疫輸字第001270號)",
    "announced_on": "2025-03-25",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638785131491706350&type=2&cid=48681"
   },
   {
-   "seq": 40,
+   "seq": 41,
    "title": "荷商葛蘭素史克藥廠股份有限公司台灣分公司「奧莫嘉膜衣錠100、150、200毫克」(衛部藥輸字第028860-62號)",
    "announced_on": "2025-03-05",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638767810003884169&type=2&cid=48551"
   },
   {
-   "seq": 41,
+   "seq": 42,
    "title": "和聯生技藥業股份有限公司「嘔可舒注射液」(衛部藥輸字第028832號)",
    "announced_on": "2025-03-05",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638767805875982794&type=2&cid=48548"
   },
   {
-   "seq": 42,
+   "seq": 43,
    "title": "輝瑞大藥廠股份有限公司「沛兒肺炎鏈球菌二十價結合型疫苗」(衛部菌疫輸字第001268號)",
    "announced_on": "2025-02-10",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638747767069838018&type=2&cid=48283"
   },
   {
-   "seq": 43,
+   "seq": 44,
    "title": "台田藥品股份有限公司「平動能膠囊劑40毫克」(衛部藥輸字第028810號)",
    "announced_on": "2025-02-03",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638742035828495118&type=2&cid=48238"
   },
   {
-   "seq": 44,
+   "seq": 45,
    "title": "台灣諾華股份有限公司「樂脂益注射劑」(衛部藥輸字第028761號)",
    "announced_on": "2025-01-22",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638731483197012881&type=2&cid=48205"
   },
   {
-   "seq": 45,
+   "seq": 46,
    "title": "輝瑞大藥廠股份有限公司「艾沛兒呼吸道融合病毒疫苗」(衛部菌疫輸字第001267號)",
    "announced_on": "2024-12-31",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638712494547939234&type=2&cid=47994"
   },
   {
-   "seq": 46,
+   "seq": 47,
    "title": "臺灣阿斯特捷利康股份有限公司「泛抑癌膜衣錠160、200毫克」(衛部藥輸字第028821、028820號)",
    "announced_on": "2024-11-27",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638682962987553065&type=2&cid=47798"
   },
   {
-   "seq": 47,
+   "seq": 48,
    "title": "頤安國際有限公司「諾瓦克維德新型冠狀病毒疫苗」(衛部菌疫輸字第001271號)",
    "announced_on": "2024-11-27",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638682955672852713&type=2&cid=47794"
   },
   {
-   "seq": 48,
+   "seq": 49,
    "title": "台灣第一三共股份有限公司「寧脂德膜衣錠180毫克」(衛部藥輸字第028817號)",
    "announced_on": "2024-11-20",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638677158609989163&type=2&cid=47759"
   },
   {
-   "seq": 49,
+   "seq": 50,
    "title": "新加坡商施維雅股份有限公司台灣分公司「拓舒沃膜衣錠 250毫克 」(衛部藥輸字第028815號)",
    "announced_on": "2024-11-19",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638676215832262994&type=2&cid=47753"
   },
   {
-   "seq": 50,
+   "seq": 51,
    "title": "台灣禮來股份有限公司「異可適注射劑」(衛部菌疫輸字第001265號)",
    "announced_on": "2024-10-11",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638642388859576379&type=2&cid=47552"
   },
   {
-   "seq": 51,
+   "seq": 52,
    "title": "輝瑞大藥廠股份有限公司「癌適求注射液40毫克／毫升」(衛部菌疫輸字第001261號)",
    "announced_on": "2024-10-11",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638642387059612491&type=2&cid=47551"
   },
   {
-   "seq": 52,
+   "seq": 53,
    "title": "香港商吉立亞醫藥有限公司台灣分公司「尚能嘉膜衣錠」(衛部藥輸字第028748號)",
    "announced_on": "2024-08-21",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638598659043525515&type=2&cid=47273"
   },
   {
-   "seq": 53,
+   "seq": 54,
    "title": "香港商吉立亞醫藥有限公司台灣分公司「尚能嘉注射劑」(衛部藥輸字第028747號)",
    "announced_on": "2024-08-21",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638598658243484867&type=2&cid=47272"
   },
   {
-   "seq": 54,
+   "seq": 55,
    "title": "臺灣阿斯特捷利康股份有限公司「利控鉀口服懸液用粉劑5、10克」(衛部藥輸字第028710-11號))",
    "announced_on": "2024-08-21",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638598655456344929&type=2&cid=47271"
   },
   {
-   "seq": 55,
+   "seq": 56,
    "title": "莫德納台灣股份有限公司「世冠飛適新型冠狀病毒疫苗」(衛部菌疫輸字第001262號)",
    "announced_on": "2024-07-26",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638576012524377399&type=2&cid=47110"
   },
   {
-   "seq": 56,
+   "seq": 57,
    "title": "吉帝藥品股份有限公司「展世達輸注溶液」(衛部罕菌疫輸字第000051號)",
    "announced_on": "2024-07-23",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638573604939141637&type=2&cid=47099"
   },
   {
-   "seq": 57,
+   "seq": 58,
    "title": "美商百傲萬里生技股份有限公司台灣分公司「允達安輸注液」(衛部菌疫輸字第001255號)",
    "announced_on": "2024-07-17",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638576008432224711&type=2&cid=47107"
   },
   {
-   "seq": 58,
+   "seq": 59,
    "title": "台灣禮來股份有限公司「杰百康膜衣錠100、50毫克」(衛部藥輸字第028693-94號)",
    "announced_on": "2024-06-19",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638543883103863637&type=2&cid=46877"
   },
   {
-   "seq": 59,
+   "seq": 60,
    "title": "輝瑞大藥廠股份有限公司「立服樂50毫克膠囊」 (衛部藥輸字第028662號)",
    "announced_on": "2024-05-15",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638513932749181806&type=2&cid=46675"
   },
   {
-   "seq": 60,
+   "seq": 61,
    "title": "台灣禮來股份有限公司「隆保注射劑100、20毫克／毫升」(衛部菌疫輸字第001246-47號)",
    "announced_on": "2024-05-08",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638507733608435502&type=2&cid=46629"
   },
   {
-   "seq": 61,
+   "seq": 62,
    "title": "荷商葛蘭素史克藥廠股份有限公司台灣分公司「欣剋融呼吸道融合病毒疫苗」(衛部菌疫輸字第001251號)",
    "announced_on": "2024-05-02",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638502581332428100&type=2&cid=46601"
   },
   {
-   "seq": 62,
+   "seq": 63,
    "title": "台灣協和麒麟股份有限公司「益副蓋錠1毫克、2毫克」( 衛部藥輸字第028602-03號)",
    "announced_on": "2024-04-11",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638484583852100060&type=2&cid=46483"
   },
   {
-   "seq": 63,
+   "seq": 64,
    "title": "松林藥品有限公司「“松林”滅疥乳膏」(衛部藥輸字第028575號)",
    "announced_on": "2024-03-07",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638454018765713665&type=2&cid=46298"
   },
   {
-   "seq": 64,
+   "seq": 65,
    "title": "台灣塩野義製藥股份有限公司「伏驖佳注射劑1公克」 (衛部藥輸字第028637號)",
    "announced_on": "2024-03-06",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638454914362128761&type=2&cid=46293"
   },
   {
-   "seq": 65,
+   "seq": 66,
    "title": "輝瑞大藥廠股份有限公司「紐舒泰口溶錠75 毫克」(衛部藥輸字第028633號)",
    "announced_on": "2024-03-01",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638454010281768698&type=2&cid=46292"
   },
   {
-   "seq": 66,
+   "seq": 67,
    "title": "新加坡商美納里尼醫藥有限公司台灣分公司「埃宗力注射液」(衛部菌疫輸字第001240號)",
    "announced_on": "2024-01-22",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638415462180228248&type=2&cid=46033"
   },
   {
-   "seq": 67,
+   "seq": 68,
    "title": "台灣必治妥施貴寶股份有限公司「舒停復膜衣錠6毫克」(衛部藥輸字第028554號)",
    "announced_on": "2023-12-15",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638382676692116354&type=2&cid=45845"
   },
   {
-   "seq": 68,
+   "seq": 69,
    "title": "輝瑞大藥廠股份有限公司「滅髓瘤凍晶注射劑5亳克」(衛部菌疫輸字第001244號)",
    "announced_on": "2023-12-13",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638380849488409890&type=2&cid=45822"
   },
   {
-   "seq": 69,
+   "seq": 70,
    "title": "逸達生物科技股份有限公司「康紓維(柳菩林)42毫克注射乳劑」(衛部藥輸字第028546號)",
    "announced_on": "2023-12-05",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638373909162651470&type=2&cid=45778"
   },
   {
-   "seq": 70,
+   "seq": 71,
    "title": "台灣諾華股份有限公司「欣覓力20、40毫克膜衣錠」(衛部藥輸字第028555-56號)",
    "announced_on": "2023-11-30",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638369400516948716&type=2&cid=45749"
   },
   {
-   "seq": 71,
+   "seq": 72,
    "title": "台灣東洋藥品工業股份有限公司「依嘉凍晶乾燥注射劑50毫克」(衛部藥輸字第028576號)",
    "announced_on": "2023-11-16",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638357223495659514&type=2&cid=45692"
   },
   {
-   "seq": 72,
+   "seq": 73,
    "title": "臺灣阿斯特捷利康股份有限公司「抑佳妥注射劑」(衛部菌疫輸字第001242號)",
    "announced_on": "2023-10-26",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638339377980908900&type=2&cid=45601"
   },
   {
-   "seq": 73,
+   "seq": 74,
    "title": "羅氏大藥廠股份有限公司 衛部菌疫輸字第001232號「利癌妥注射劑」",
    "announced_on": "2023-10-18",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638332465612493247&type=2&cid=45561"
   },
   {
-   "seq": 74,
+   "seq": 75,
    "title": "微功商行有限公司 衛部藥輸字第028526號「億活膠囊 250毫克」",
    "announced_on": "2023-10-17",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638331459436438264&type=2&cid=45546"
   },
   {
-   "seq": 75,
+   "seq": 76,
    "title": "微功商行有限公司 衛部藥輸字第028525號「億活散 250毫克」",
    "announced_on": "2023-10-17",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638331459035721819&type=2&cid=45545"
   },
   {
-   "seq": 76,
+   "seq": 77,
    "title": "台灣武田藥品工業股份有限公司 衛部藥輸字第028492號「克巨染膜衣錠200毫克」",
    "announced_on": "2023-10-17",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638331453936864139&type=2&cid=45544"
   },
   {
-   "seq": 77,
+   "seq": 78,
    "title": "台田藥品股份有限公司 衛部藥輸字第028277號「衛復守衛錠劑150毫克」、衛部藥輸字第028278號「衛復守衛錠劑300毫克」",
    "announced_on": "2023-10-12",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638327023977092648&type=2&cid=45525"
   },
   {
-   "seq": 78,
+   "seq": 79,
    "title": "賽諾菲股份有限公司 衛部菌疫輸字第001234-37號「奧妥凝凍晶注射劑250、500、1000、2000國際單位」",
    "announced_on": "2023-09-25",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638312331345951443&type=2&cid=45460"
   },
   {
-   "seq": 79,
+   "seq": 80,
    "title": "台灣禮來股份有限公司 衛部藥輸字第028463-68號「猛健樂注射劑2.5毫克/0.5毫升，5毫克/0.5毫升，7.5毫克/0.5毫升，10毫克/0.5毫升，12.5毫克/0.5毫升，15毫克/0.5毫升」",
    "announced_on": "2023-08-29",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638289376695123554&type=2&cid=44254"
   },
   {
-   "seq": 80,
+   "seq": 81,
    "title": "香港商吉立亞醫藥有限公司台灣分公司 衛部藥輸字第027899號「韋如意凍晶乾燥注射劑 100 毫克」",
    "announced_on": "2023-08-23",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638283835933130060&type=2&cid=44194"
   },
   {
-   "seq": 81,
+   "seq": 82,
    "title": "賽諾菲股份有限公司 衛部菌疫輸字第001233號「力汰瘤濃縮輸注液」",
    "announced_on": "2023-08-16",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638278069033192738&type=2&cid=44167"
   },
   {
-   "seq": 82,
+   "seq": 83,
    "title": "台灣百靈佳殷格翰股份有限公司 衛部菌疫輸字第001210號「希蓓麗活靜脈輸注液」",
    "announced_on": "2023-08-10",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638272650404965999&type=2&cid=44138"
   },
   {
-   "seq": 83,
+   "seq": 84,
    "title": "美時化學製藥股份有限公司 衛部藥輸字第028485號「贊必佳凍晶注射劑4毫克」",
    "announced_on": "2023-07-17",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638252070959946498&type=2&cid=43741"
   },
   {
-   "seq": 84,
+   "seq": 85,
    "title": "恩典科研股份有限公司衛部藥輸字第R00105號「鎵連坊鍺68/鎵68孳生器」",
    "announced_on": "2023-07-17",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638251826383024297&type=2&cid=43729"
   },
   {
-   "seq": 85,
+   "seq": 86,
    "title": "輝瑞大藥廠股份有限公司衛部藥輸字第028474號「倍拉維150毫克/100毫克膜衣錠」",
    "announced_on": "2023-06-30",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638252145204515258&type=2&cid=43639"
   },
   {
-   "seq": 86,
+   "seq": 87,
    "title": "華上生技醫藥股份有限公司 衛部藥製字第061429號「剋必達錠」",
    "announced_on": "2023-06-28",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638235688200872964&type=2&cid=43622"
   },
   {
-   "seq": 87,
+   "seq": 88,
    "title": "台灣武田藥品工業股份有限公司 衛部藥輸字第028453號「癌剋挺膠囊40毫克」",
    "announced_on": "2023-06-27",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638234682061616163&type=2&cid=43614"
   },
   {
-   "seq": 88,
+   "seq": 89,
    "title": "高端疫苗生物製劑股份有限公司衛部菌疫製字第000152號「\"高端\"腸病毒71型疫苗」",
    "announced_on": "2023-05-12",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638195801134287711&type=2&cid=43332"
   },
   {
-   "seq": 89,
+   "seq": 90,
    "title": "臺灣阿斯特捷利康股份有限公司衛部菌疫輸字第001231號「莎芙諾注射劑 150毫克/毫升」",
    "announced_on": "2023-05-02",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638252147392662376&type=2&cid=43218"
   },
   {
-   "seq": 90,
+   "seq": 91,
    "title": "台灣諾和諾德藥品股份有限公司衛部菌疫輸字第001229號「諾和高 注射劑10毫克/1.5毫升」",
    "announced_on": "2023-05-01",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638185256613944644&type=2&cid=43201"
   },
   {
-   "seq": 91,
+   "seq": 92,
    "title": "台灣東洋藥品工業股份有限公司衛部菌疫輸字第001230號「福流佐四價流感疫苗」",
    "announced_on": "2023-04-20",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638175800348642406&type=2&cid=43034"
   },
   {
-   "seq": 92,
+   "seq": 93,
    "title": "台灣安斯泰來製藥股份有限公司 衛部菌疫輸字第001212-13號「備思復凍晶注射劑20、30毫克」",
    "announced_on": "2023-04-12",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638169170891821767&type=2&cid=42974"
   },
   {
-   "seq": 93,
+   "seq": 94,
    "title": "安特羅生物科技股份有限公司 衛部菌疫製字第000149號「安拓伏腸病毒71型疫苗」",
    "announced_on": "2023-04-11",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638168088767225421&type=2&cid=42959"
   },
   {
-   "seq": 94,
+   "seq": 95,
    "title": "羅氏大藥廠股份有限公司 衛部菌疫輸字第001211號「癌舒妥注射劑」",
    "announced_on": "2023-04-07",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638164796675283055&type=2&cid=42949"
   },
   {
-   "seq": 95,
+   "seq": 96,
    "title": "嬌生股份有限公司 衛部菌疫輸字第001216號「特飛立注射劑10毫克/毫升」、衛部菌疫輸字第001217號「特飛立注射劑90毫克/毫升」",
    "announced_on": "2023-04-06",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638164008389677286&type=2&cid=42942"
   },
   {
-   "seq": 96,
+   "seq": 97,
    "title": "羅氏大藥廠股份有限公司 衛部菌疫輸字第001214號「羅視萌注射劑」",
    "announced_on": "2023-03-22",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638151136838179761&type=2&cid=42854"
   },
   {
-   "seq": 97,
+   "seq": 98,
    "title": "臺灣阿斯特捷利康股份有限公司 衛部菌疫輸字第001215號「泰莎樂注射液劑210毫克」",
    "announced_on": "2023-02-17",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638122525229401130&type=2&cid=42602"
   },
   {
-   "seq": 98,
+   "seq": 99,
    "title": "台灣諾華股份有限公司 衛部罕菌疫輸字第000044號「樂適達注射劑」、衛部菌疫輸字第001209號「\"諾華\"樂喜達注射劑」",
    "announced_on": "2023-02-10",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638116228839911046&type=2&cid=42533"
   },
   {
-   "seq": 99,
+   "seq": 100,
    "title": "友華生技醫藥股份有限公司 衛部藥輸字第028351、028352號「博癌癒50、75毫克」",
    "announced_on": "2022-12-13",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638065202642563901&type=2&cid=42177"
   },
   {
-   "seq": 100,
+   "seq": 101,
    "title": "台灣必治妥施貴寶股份有限公司 衛部菌疫輸字第001201號「芮寶興凍晶注射劑」",
    "announced_on": "2022-12-05",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638058556535026965&type=2&cid=42134"
   },
   {
-   "seq": 101,
+   "seq": 102,
    "title": "禾利行股份有限公司衛部菌疫輸字第001206號「拓達維注射劑」",
    "announced_on": "2022-11-29",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638053482453432691&type=2&cid=42104"
   },
   {
-   "seq": 102,
+   "seq": 103,
    "title": "美商默沙東藥廠股份有限公司台灣分公司 衛部菌疫輸字第001198號「肺恩賜 肺炎鏈球菌十五價結合型疫苗 滅菌懸液注射劑」",
    "announced_on": "2022-11-04",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638031718543159496&type=2&cid=41913"
   },
   {
-   "seq": 103,
+   "seq": 104,
    "title": "美商惠氏藥廠（亞洲）股份有限公司台灣分公司 衛部菌疫輸字第001196、97號「能增樂預填充注射筆24、60毫克」",
    "announced_on": "2022-10-27",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638028094616510511&type=2&cid=41846"
   },
   {
-   "seq": 104,
+   "seq": 105,
    "title": "香港商高德美有限公司台灣分公司 衛部藥輸字第028310號「艾克痘乳膏」",
    "announced_on": "2022-10-25",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f638023093827403119&type=2&cid=41829"
   },
   {
-   "seq": 105,
+   "seq": 106,
    "title": "台灣拜耳股份有限公司 衛部藥輸字第028325、26號 「可申達10、20毫克膜衣錠」",
    "announced_on": "2022-08-16",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637962576674226128&type=2&cid=41446"
   },
   {
-   "seq": 106,
+   "seq": 107,
    "title": "台灣必治妥施貴寶股份有限公司衛部藥輸字第028311號「恩瑞比膠囊」",
    "announced_on": "2022-08-04",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637952350561601676&type=2&cid=41365"
   },
   {
-   "seq": 107,
+   "seq": 108,
    "title": "健喬信元醫藥生技股份有限公司衛部藥輸字第028330號「悠透舒膜衣錠0.1毫克」",
    "announced_on": "2022-07-15",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637934988902522832&type=2&cid=41229"
   },
   {
-   "seq": 108,
+   "seq": 109,
    "title": "台灣第一三共股份有限公司 衛部藥輸字第028293號「圖拉留膠囊200毫克」",
    "announced_on": "2022-06-28",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637920043349994686&type=2&cid=41071"
   },
   {
-   "seq": 109,
+   "seq": 110,
    "title": "台灣安進藥品有限公司衛部藥輸字第028291號「洛滿舒膜衣錠120毫克」",
    "announced_on": "2022-06-15",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637909029995180480&type=2&cid=40993"
   },
   {
-   "seq": 110,
+   "seq": 111,
    "title": "美商惠氏藥廠（亞洲）股份有限公司台灣分公司 衛部藥輸字第028233-35號 喜繽果50、100、200毫克膜衣錠",
    "announced_on": "2022-05-09",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637876877849621401&type=2&cid=40467"
   },
   {
-   "seq": 111,
+   "seq": 112,
    "title": "輝凌藥品股份有限公司 衛部菌疫輸字第001187-89號「樂可孕注射筆12微克/0.36毫升、36微克/1.08毫升、72微克/2.16毫升」",
    "announced_on": "2022-04-08",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637850431401808412&type=2&cid=40276"
   },
   {
-   "seq": 112,
+   "seq": 113,
    "title": "臺灣阿斯特捷利康股份有限公司 衛部藥輸字第028198號「科舒洛膠囊10毫克」、衛部藥輸字第028199號「科舒洛膠囊25毫克」",
    "announced_on": "2022-04-07",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637849507981880338&type=2&cid=40269"
   },
   {
-   "seq": 113,
+   "seq": 114,
    "title": "台灣小野藥品工業股份有限公司 衛部藥輸字第028193號「衛徠膜衣錠」",
    "announced_on": "2022-03-10",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637825323939165625&type=2&cid=40102"
   },
   {
-   "seq": 114,
+   "seq": 115,
    "title": "荷商葛蘭素史克藥廠股份有限公司台灣分公司 衛部藥輸字第028219號「莫帕滋膜衣錠30毫克」",
    "announced_on": "2022-02-18",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637807728998148006&type=2&cid=39919"
   },
   {
-   "seq": 115,
+   "seq": 116,
    "title": "荷商葛蘭素史克藥廠股份有限公司台灣分公司 衛部藥輸字第028218號「莫帕滋長效注射劑」",
    "announced_on": "2022-02-18",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637807728358049120&type=2&cid=39918"
   },
   {
-   "seq": 116,
+   "seq": 117,
    "title": "香港商吉立亞醫藥有限公司台灣分公司 衛部藥輸字第028208、028209號「吉炎可膜衣錠100、200毫克」",
    "announced_on": "2022-02-15",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637805309711457015&type=2&cid=39892"
   },
   {
-   "seq": 117,
+   "seq": 118,
    "title": "合一生技股份有限公司 衛部藥製字第060827號「速必一 乳膏」",
    "announced_on": "2022-01-20",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637782675881225753&type=2&cid=39744"
   },
   {
-   "seq": 118,
+   "seq": 119,
    "title": "賽諾菲股份有限公司 衛部菌疫輸字第001147號「多髓易濃縮輸注液20毫克/毫升」",
    "announced_on": "2022-01-19",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637781998213593142&type=2&cid=39741"
   },
   {
-   "seq": 119,
+   "seq": 120,
    "title": "台灣諾華股份有限公司 衛部菌疫輸字第001174號「倍優視注射劑120毫克/毫升」",
    "announced_on": "2022-01-19",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637781987223481911&type=2&cid=39738"
   },
   {
-   "seq": 120,
+   "seq": 121,
    "title": "吉帝藥品股份有限公司 衛部菌疫輸字第001175號「寬利安濃縮輸注液」",
    "announced_on": "2022-01-05",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637769757868660534&type=2&cid=39593"
   },
   {
-   "seq": 121,
+   "seq": 122,
    "title": "台灣塩野義製藥股份有限公司 衛部藥輸字第028189號「適秘效膜衣錠0.2毫克」",
    "announced_on": "2021-11-30",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637738690978327922&type=2&cid=39298"
   },
   {
-   "seq": 122,
+   "seq": 123,
    "title": "臺灣百濟神州有限公司 衛部藥輸字第028160號「百悅澤膠囊80毫克」",
    "announced_on": "2021-11-23",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637732957237836702&type=2&cid=39034"
   },
   {
-   "seq": 123,
+   "seq": 124,
    "title": "嬌生股份有限公司衛部菌疫輸字第001177號「肺倍恩注射劑50毫克/毫升」",
    "announced_on": "2021-11-04",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637716293628610521&type=2&cid=38900"
   },
   {
-   "seq": 124,
+   "seq": 125,
    "title": "衛采製藥股份有限公司 衛部藥輸字第028145-46號「達衛眠錠5、10毫克」",
    "announced_on": "2021-10-29",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637711272470248172&type=2&cid=38856"
   },
   {
-   "seq": 125,
+   "seq": 126,
    "title": "台灣諾華股份有限公司 衛部菌疫輸字第001176號「祈萊亞靜脈輸注用懸浮液」",
    "announced_on": "2021-10-29",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637711106050590016&type=2&cid=38851"
   },
   {
-   "seq": 126,
+   "seq": 127,
    "title": "台灣拜耳股份有限公司 衛部藥輸字第028107-09號 偉卡沃2.5、5、10毫克膜衣錠",
    "announced_on": "2021-10-18",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637701612512764774&type=2&cid=38777"
   },
   {
-   "seq": 127,
+   "seq": 128,
    "title": "台灣默克股份有限公司 衛部藥輸字第028152號「德邁特膜衣錠225毫克」",
    "announced_on": "2021-10-06",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637691346596574934&type=2&cid=38704"
   },
   {
-   "seq": 128,
+   "seq": 129,
    "title": "運和生技有限公司 衛部藥輸字第028106「期樂錠 50毫克 」",
    "announced_on": "2021-09-27",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637683448859386374&type=2&cid=38654"
   },
   {
-   "seq": 129,
+   "seq": 130,
    "title": "荷商葛蘭素史克藥廠股份有限公司台灣分公司 衛部菌疫輸字第001150號「必思諾B型腦膜炎雙球菌疫苗」",
    "announced_on": "2021-09-08",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637667768260678533&type=2&cid=37576"
   },
   {
-   "seq": 130,
+   "seq": 131,
    "title": "台灣諾和諾德藥品股份有限公司 衛部菌疫輸字第001160-64號 「諾和長效第八因子注射劑 500、1000、1500、2000、3000 IU」",
    "announced_on": "2021-08-30",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637659415241213662&type=2&cid=37517"
   },
   {
-   "seq": 131,
+   "seq": 132,
    "title": "荷商葛蘭素史克藥廠股份有限公司台灣分公司 衛部藥輸字第028062號「羅克霸持續性藥效錠600毫克」",
    "announced_on": "2021-08-24",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637654190081186371&type=2&cid=37489"
   },
   {
-   "seq": 132,
+   "seq": 133,
    "title": "台灣諾華股份有限公司 衛部藥輸字第028096號「泰芮塔150毫克膜衣錠」、衛部藥輸字第028097號「泰芮塔200毫克膜衣錠」",
    "announced_on": "2021-08-10",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637642139928075852&type=2&cid=37399"
   },
   {
-   "seq": 133,
+   "seq": 134,
    "title": "信東生技股份有限公司 衛部藥輸字第028103號「唯醒膜衣錠4.5毫克」",
    "announced_on": "2021-07-29",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637631746807758078&type=2&cid=37325"
   },
   {
-   "seq": 134,
+   "seq": 135,
    "title": "台灣東洋藥品工業股份有限公司衛部藥輸字第028063號「達伯坦錠4.5毫克」",
    "announced_on": "2021-07-14",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637618616956739806&type=2&cid=37243"
   },
   {
-   "seq": 135,
+   "seq": 136,
    "title": "新加坡商美納里尼醫藥有限公司台灣分公司 衛部藥輸字第028081-83號「賽倍達錠50、100、200毫克」",
    "announced_on": "2021-07-12",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637617056713780045&type=2&cid=37230"
   },
   {
-   "seq": 136,
+   "seq": 137,
    "title": "裕利股份有限公司 衛部藥輸字第028029號「泰時維膜衣錠100毫克」",
    "announced_on": "2021-06-16",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637594524035950676&type=2&cid=37091"
   },
   {
-   "seq": 137,
+   "seq": 138,
    "title": "台灣諾華股份有限公司 衛部藥輸字第R00104號「鎦癌平注射液370百萬貝克/毫升」",
    "announced_on": "2021-05-28",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637654153845451713&type=2&cid=37486"
   },
   {
-   "seq": 138,
+   "seq": 139,
    "title": "臺灣阿斯特捷利康股份有限公司 衛部藥輸字第028047號「克瘤康膠囊100毫克」",
    "announced_on": "2021-04-28",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637552267716832908&type=2&cid=36434"
   },
   {
-   "seq": 139,
+   "seq": 140,
    "title": "台灣諾華股份有限公司 衛部藥輸字第027994-96號「愛克利膜衣錠」",
    "announced_on": "2021-03-17",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637515968842048131&type=2&cid=36083"
   },
   {
-   "seq": 140,
+   "seq": 141,
    "title": "台灣諾華股份有限公司 衛部罕菌疫輸字第000029號「諾健生靜脈懸液注射劑 」",
    "announced_on": "2021-02-25",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637498756649432738&type=2&cid=35985"
   },
   {
-   "seq": 141,
+   "seq": 142,
    "title": "美商惠氏藥廠(亞洲)股份有限公司台灣分公司 衛部藥輸字第027999號「適健膚外用軟膏」",
    "announced_on": "2021-02-24",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637497549851830737&type=2&cid=35971"
   },
   {
-   "seq": 142,
+   "seq": 143,
    "title": "台灣拜耳股份有限公司 衛部藥輸字第027936號「諾博戈膜衣錠300毫克」",
    "announced_on": "2021-02-03",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637479516044339356&type=2&cid=35883"
   },
   {
-   "seq": 143,
+   "seq": 144,
    "title": "台灣武田藥品工業股份有限公司衛部菌疫輸字第001145號「利腸服5毫克注射劑」",
    "announced_on": "2020-12-09",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637431277410738941&type=2&cid=35534"
   },
   {
-   "seq": 144,
+   "seq": 145,
    "title": "台灣中外製藥股份有限公司 衛部菌疫輸字第001143號「櫻普立 皮下注射劑120毫克 」",
    "announced_on": "2020-12-09",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637431114449052566&type=2&cid=35532"
   },
   {
-   "seq": 145,
+   "seq": 146,
    "title": "香港商艾維斯有限公司台灣分公司 衛部菌疫輸字第001138號「艾久維注射液」",
    "announced_on": "2020-11-23",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637417259937989348&type=2&cid=35418"
   },
   {
-   "seq": 146,
+   "seq": 147,
    "title": "台灣第一三共股份有限公司 衛部藥輸字第027803號「德力靜 膜衣錠 15毫克 」",
    "announced_on": "2020-09-28",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637368791343691781&type=2&cid=35062"
   },
   {
-   "seq": 147,
+   "seq": 148,
    "title": "嬌生股份有限公司 衛部藥輸字第027912-14號 「盼樂膜衣錠」",
    "announced_on": "2020-09-28",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637368789439646639&type=2&cid=35059"
   },
   {
-   "seq": 148,
+   "seq": 149,
    "title": "台灣安斯泰來製藥股份有限公司衛部藥輸字第027890號「適加坦膜衣錠40毫克」",
    "announced_on": "2020-09-23",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637364502485861983&type=2&cid=35031"
   },
   {
-   "seq": 149,
+   "seq": 150,
    "title": "台灣參天製藥股份有限公司 衛部藥輸字第027906號「愛倍力點眼液 0.002%」",
    "announced_on": "2020-09-23",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637364499863668969&type=2&cid=35029"
   },
   {
-   "seq": 150,
+   "seq": 151,
    "title": "瑞士商艾伯維藥品有限公司台灣分公司 衛部藥輸字第027902號「銳虎持續性藥效錠15毫克 」",
    "announced_on": "2020-08-25",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637339652874674741&type=2&cid=34787"
   },
   {
-   "seq": 151,
+   "seq": 152,
    "title": "台灣諾華股份有限公司 衛部菌疫輸字第001127/001128號 「安莫疼注射液劑70毫克/毫升 /140毫克/毫升 」",
    "announced_on": "2020-08-10",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637326664720081138&type=2&cid=34479"
   },
   {
-   "seq": 152,
+   "seq": 153,
    "title": "台灣安進藥品有限公司 衛部菌疫輸字第001137號 「益穩挺 注射液 」",
    "announced_on": "2020-07-31",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637318141580438221&type=2&cid=34013"
   },
   {
-   "seq": 153,
+   "seq": 154,
    "title": "羅氏大藥廠股份有限公司 衛部菌疫輸字第001123號「保癌寧 凍晶注射劑 」",
    "announced_on": "2020-07-30",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637317213876975483&type=2&cid=34007"
   },
   {
-   "seq": 154,
+   "seq": 155,
    "title": "台灣安斯泰來製藥股份有限公司 衛部藥輸字第027856號 「施覓福膜衣錠50毫克」",
    "announced_on": "2020-07-02",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637292786710252724&type=2&cid=33871"
   },
   {
-   "seq": 155,
+   "seq": 156,
    "title": "羅氏大藥廠股份有限公司 衛部藥輸字第 027864/027865號 「羅思克 100 毫克 / 200 毫克膠囊」",
    "announced_on": "2020-06-11",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637274836965407177&type=2&cid=33312"
   },
   {
-   "seq": 156,
+   "seq": 157,
    "title": "美商惠氏藥廠（亞洲）股份有限公司台灣分公司 衛部藥輸字第027691號「瘤利剋膜衣錠25毫克」",
    "announced_on": "2020-04-28",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637236649660498032&type=2&cid=33078"
   },
   {
-   "seq": 157,
+   "seq": 158,
    "title": "香港商吉立亞醫藥有限公司台灣分公司 衛部藥輸字第027570號「吉他韋膜衣錠」",
    "announced_on": "2020-04-28",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637236633048489061&type=2&cid=33077"
   },
   {
-   "seq": 158,
+   "seq": 159,
    "title": "美商惠氏藥廠（亞洲）股份有限公司台灣分公司 衛部藥輸字第027801號 「達勝癌膠囊0.25毫克 」",
    "announced_on": "2020-04-28",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637236630274437388&type=2&cid=33076"
   },
   {
-   "seq": 159,
+   "seq": 160,
    "title": "博士倫股份有限公司 衛部藥輸字第027825號「博士倫凡視達眼用液劑0.024%」",
    "announced_on": "2020-04-15",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637225484012560423&type=2&cid=32985"
   },
   {
-   "seq": 160,
+   "seq": 161,
    "title": "台灣武田藥品工業股份有限公司 衛部藥輸字第027764號 「截永樂膠囊」",
    "announced_on": "2020-02-26",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637183133166342872&type=2&cid=32765"
   },
   {
-   "seq": 161,
+   "seq": 162,
    "title": "台灣拜耳股份有限公司 衛部藥輸字第027746-027748號 維泰凱膠囊25毫克、維泰凱膠囊100毫克及維泰凱20毫克/毫升口服溶液",
    "announced_on": "2020-02-12",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637171246996740966&type=2&cid=32672"
   },
   {
-   "seq": 162,
+   "seq": 163,
    "title": "台灣武田藥品工業股份有限公司衛部藥輸字第027623號「福星定膜衣錠20毫克(Vocinti Film-Coated Tablets 20mg)」",
    "announced_on": "2019-12-03",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637109686434238694&type=2&cid=32310"
   },
   {
-   "seq": 163,
+   "seq": 164,
    "title": "台灣優時比貿易有限公司 衛部藥輸字第027714~027719號 「必治癲膜衣錠、注射液、口服溶液」",
    "announced_on": "2019-11-14",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637093459955404396&type=2&cid=32211"
   },
   {
-   "seq": 164,
+   "seq": 165,
    "title": "台灣拜耳股份有限公司 衛部藥輸字第027745號 安列庫帕凍晶靜脈注射劑",
    "announced_on": "2019-11-05",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637085445784753113&type=2&cid=32166"
   },
   {
-   "seq": 165,
+   "seq": 166,
    "title": "輝瑞大藥廠股份有限公司 衛部藥輸字第027705號「贊飛得注射劑2 g/0.5 g 」",
    "announced_on": "2019-10-29",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637079662784426632&type=2&cid=32137"
   },
   {
-   "seq": 166,
+   "seq": 167,
    "title": "瑞士商艾伯維藥品有限公司台灣分公司 衛部菌疫輸字第001109號 「喜開悅 75mg針筒裝注射劑」",
    "announced_on": "2019-10-25",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637076153191791543&type=2&cid=32102"
   },
   {
-   "seq": 167,
+   "seq": 168,
    "title": "台灣禮來股份有限公司 衛部菌疫輸字第001113號 「恩疼停注射劑」",
    "announced_on": "2019-10-25",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637076146363335217&type=2&cid=32101"
   },
   {
-   "seq": 168,
+   "seq": 169,
    "title": "台灣塩野義製藥股份有限公司衛部藥輸字第027693號「紓伏效膜衣錠20毫克(Xofluza Tablets 20mg)」",
    "announced_on": "2019-10-22",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637073330653116842&type=2&cid=32073"
   },
   {
-   "seq": 169,
+   "seq": 170,
    "title": "台灣武田藥品工業股份有限公司 衛部藥字第027731號「癌能畢 膜衣錠90毫克」",
    "announced_on": "2019-10-22",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637070183813537464&type=2&cid=32066"
   },
   {
-   "seq": 170,
+   "seq": 171,
    "title": "台灣安進藥品有限公司 衛部藥輸字第027639號「旁必福注射液」",
    "announced_on": "2019-07-25",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636996567770382713&type=2&cid=30554"
   },
   {
-   "seq": 171,
+   "seq": 172,
    "title": "嬌生股份有限公司 衛部藥輸字第027596號「安列康膜衣錠 60毫克」",
    "announced_on": "2019-07-25",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636996566862560988&type=2&cid=30553"
   },
   {
-   "seq": 172,
+   "seq": 173,
    "title": "臺灣阿斯特捷利康股份有限公司 衛部菌疫輸字第001101號「肺昇朗注射液劑30毫克 」",
    "announced_on": "2019-07-25",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636996565755511127&type=2&cid=30552"
   },
   {
-   "seq": 173,
+   "seq": 174,
    "title": "夏爾生技醫藥股份有限公司  衛部藥輸字第027666號「璨睛點眼液5%」",
    "announced_on": "2019-07-02",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636976797921377934&type=2&cid=30425"
   },
   {
-   "seq": 174,
+   "seq": 175,
    "title": "台灣禮來股份有限公司  衛部藥輸字第027640-027643號「捷癌寧膜衣錠」",
    "announced_on": "2019-06-13",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636960154207905309&type=2&cid=30267"
   },
   {
-   "seq": 175,
+   "seq": 176,
    "title": "美商默沙東藥廠股份有限公司台灣分公司 衛部藥輸字第027559號 「滅巨斯輸注用濃縮溶液20毫克/毫升」",
    "announced_on": "2019-04-09",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636904123595856884&type=2&cid=29237"
   },
   {
-   "seq": 176,
+   "seq": 177,
    "title": "美商默沙東藥廠股份有限公司台灣分公司 衛部藥輸字第027555號 「滅巨斯膜衣錠240毫克」",
    "announced_on": "2019-04-09",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636904122578674874&type=2&cid=29236"
   },
   {
-   "seq": 177,
+   "seq": 178,
    "title": "台灣中外製藥股份有限公司衛部菌疫輸字第001087號 HEMLIBRA SC Injection 150 mg/mL",
    "announced_on": "2018-12-11",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636801319618190803&type=2&cid=28552"
   },
   {
-   "seq": 178,
+   "seq": 179,
    "title": "賽諾菲股份有限公司 衛部菌疫輸字第001082號 杜避炎注射劑300毫克(Dupixent solution for injection 300mg)",
    "announced_on": "2018-12-05",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636796098778825958&type=2&cid=28516"
   },
   {
-   "seq": 179,
+   "seq": 180,
    "title": "臺灣阿斯特捷利康股份有限公司衛部菌疫輸字第001088號抑癌寧注射劑(IMFINZI Injection 50 mg/ml)",
    "announced_on": "2018-11-28",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636790161753808695&type=2&cid=28491"
   },
   {
-   "seq": 180,
+   "seq": 181,
    "title": "台灣默克股份有限公司 衛部菌疫輸字第001085號「百穩益注射劑20毫克/毫升 」",
    "announced_on": "2018-11-21",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636783889944466209&type=2&cid=28405"
   },
   {
-   "seq": 181,
+   "seq": 182,
    "title": "法商益普生股份有限公司台灣分公司衛部藥輸字第027513號「癌必定膜衣錠 60毫克」",
    "announced_on": "2018-11-03",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636768458689391340&type=2&cid=28299"
   },
   {
-   "seq": 182,
+   "seq": 183,
    "title": "美商默沙東藥廠股份有限公司台灣分公司 衛部藥輸字第027458號「穩適妥5毫克膜衣錠」",
    "announced_on": "2018-09-12",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636723410923685468&type=2&cid=27794"
   },
   {
-   "seq": 183,
+   "seq": 184,
    "title": "台灣協和醱酵麒麟股份有限公司「立美西膚皮下注射劑210毫克」(衛部菌疫輸字第001076號)",
    "announced_on": "2018-09-06",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636718402875620514&type=2&cid=27763"
   },
   {
-   "seq": 184,
+   "seq": 185,
    "title": "台灣諾華股份有限公司「擊癌利200毫克」(衛部藥輸字第027320號)",
    "announced_on": "2018-08-30",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636712506872535423&type=2&cid=27725"
   },
   {
-   "seq": 185,
+   "seq": 186,
    "title": "美商惠氏藥廠（亞洲）股份有限公司台灣分公司 「沛斯博凍晶注射劑1毫克」 (衛部菌疫輸字第001081號 )",
    "announced_on": "2018-08-30",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636712505587506065&type=2&cid=27724"
   },
   {
-   "seq": 186,
+   "seq": 187,
    "title": "嬌生股份有限公司「特諾雅注射液 」(衛部菌疫輸字第001077號)",
    "announced_on": "2018-08-24",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636707221240954975&type=2&cid=27683"
   },
   {
-   "seq": 187,
+   "seq": 188,
    "title": "台灣禮來股份有限公司「樂除瘤注射劑 」(衛部菌疫輸字第001075號 )",
    "announced_on": "2018-08-13",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636697655785311869&type=2&cid=27634"
   },
   {
-   "seq": 188,
+   "seq": 189,
    "title": "瑞士商艾伯維藥品有限公司台灣分公司 「唯可來膜衣錠 10毫克 」(衛部藥輸字第027357號)",
    "announced_on": "2018-08-13",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636697654479946710&type=2&cid=27633"
   },
   {
-   "seq": 189,
+   "seq": 190,
    "title": "台灣諾華股份有限公司 衛部藥輸字第027426號 「療德妥軟膠囊25毫克 」",
    "announced_on": "2018-08-10",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636695037935345263&type=2&cid=27628"
   },
   {
-   "seq": 190,
+   "seq": 191,
    "title": "臺灣阿斯特捷利康股份有限公司「令癌莎膜衣錠100毫克」(衛部藥輸字第027445號)",
    "announced_on": "2018-06-25",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636694220125309623&type=2&cid=27389"
   },
   {
-   "seq": 191,
+   "seq": 192,
    "title": "台灣東洋藥品工業股份有限公司「朗斯弗膜衣錠15毫克 」(衛部藥輸字第027281號)",
    "announced_on": "2018-06-20",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636694220125508806&type=2&cid=27356"
   },
   {
-   "seq": 192,
+   "seq": 193,
    "title": "台灣安進藥品有限公司「百利妥注射劑克」(衛部菌疫輸字第001040號)",
    "announced_on": "2018-03-02",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636694220125678593&type=2&cid=25314"
   },
   {
-   "seq": 193,
+   "seq": 194,
    "title": "台灣塩野義製藥股份有限公司「比樂舒活錠200毫克」(衛部藥輸字第026734號)",
    "announced_on": "2018-03-02",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636694220125903510&type=2&cid=25313"
   },
   {
-   "seq": 194,
+   "seq": 195,
    "title": "科進製藥科技股份有限公司「脂妙清軟膠囊1000毫克」(衛部藥製字第059019 號)",
    "announced_on": "2018-03-02",
    "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636694220126118358&type=2&cid=25311"
   },
   {
-   "seq": 195,
+   "seq": 196,
    "title": "賽諾菲股份有限公司「去癌達注射劑(衛署藥輸字第025633號)」",
    "announced_on": "2014-07-20",
    "pdf": "siteListContent.aspx?sid=2712&id=9429"
   },
   {
-   "seq": 196,
+   "seq": 197,
    "title": "台灣百靈佳殷格翰股份有限公司「普栓達膠曩囊150毫克、110毫克(衛署藥輸字第025458、025459號)」",
    "announced_on": "2014-07-10",
    "pdf": "siteListContent.aspx?sid=2712&id=9395"
   },
   {
-   "seq": 197,
+   "seq": 198,
    "title": "臺灣阿斯特捷利康股份有限公司「百無凝膜衣錠90毫克(衛署藥輸字第025691號)」",
    "announced_on": "2014-01-22",
    "pdf": "siteListContent.aspx?sid=2712&id=8621"
   },
   {
-   "seq": 198,
+   "seq": 199,
    "title": "台灣武田藥品工業股份有限公司「得喜胃通30毫克、60毫克(衛署藥輸字第025886、025887號)」",
    "announced_on": "2013-12-20",
    "pdf": "siteListContent.aspx?sid=2712&id=8535"
   },
   {
-   "seq": 199,
+   "seq": 200,
    "title": "賽諾菲股份有限公司「移黏寶酶靜脈輸液(衛署罕菌疫輸字第000011號)」",
    "announced_on": "2013-04-22",
    "pdf": "siteListContent.aspx?sid=2712&id=7518"
   },
   {
-   "seq": 200,
+   "seq": 201,
    "title": "台灣中外製藥股份有限公司「安挺樂靜脈點滴注射劑(衛署菌疫輸字第000907號)」",
    "announced_on": "2012-11-16",
    "pdf": "siteListContent.aspx?sid=2712&id=6961"
   },
   {
-   "seq": 201,
+   "seq": 202,
    "title": "台灣諾華股份有限公司「高糖優適錠50毫克(衛署藥輸字第025306號)」",
    "announced_on": "2012-11-15",
    "pdf": "siteListContent.aspx?sid=2712&id=6958"
   },
   {
-   "seq": 202,
+   "seq": 203,
    "title": "荷商葛蘭素史克藥廠股份有限公司「保骼麗注射液(衛署菌疫輸字第000918號)」",
    "announced_on": "2012-10-17",
    "pdf": "siteListContent.aspx?sid=2712&id=6858"
   },
   {
-   "seq": 203,
+   "seq": 204,
    "title": "台灣參天製藥股份有限公司之「泰福羅坦眼藥水(衛署藥輸字第025377號)」",
    "announced_on": "2012-04-19",
    "pdf": "siteListContent.aspx?sid=2712&id=5974"
   },
   {
-   "seq": 204,
+   "seq": 205,
    "title": "健臻生技有限公司之[宜保安濃縮輸注液1毫克/毫升(衛署藥輸字第025472號)]",
    "announced_on": "2012-03-23",
    "pdf": "siteListContent.aspx?sid=2712&id=5893"
   },
   {
-   "seq": 205,
+   "seq": 206,
    "title": "台田藥品股份有限公司之「力清之膜衣錠2毫克(衛署藥輸字第025350號)」",
    "announced_on": "2012-03-02",
    "pdf": "siteListContent.aspx?sid=2712&id=5744"
   },
   {
-   "seq": 206,
+   "seq": 207,
    "title": "行政院原子能委員會核能研究所核醫製藥中心之「核研[氟-18]氟化鈉注射劑（衛署藥製字第R00032號）",
    "announced_on": "2012-02-04",
    "pdf": "siteListContent.aspx?sid=2712&id=5682"
@@ -15431,6 +15484,16 @@
    "at": "2026-08-20T06:25:01+08:00",
    "stage": "enrich_details",
    "note": "{'queried': 0, 'found': 0, 'not_found': 0, 'designated_07': 0, 'pending_before': 0, 'aborted': None, 'pending_after': 0}"
+  },
+  {
+   "at": "2026-08-21T07:41:10+08:00",
+   "stage": "fetch_nme_list",
+   "note": "{'announcements': 207, 'candidate_permits': 273, 'distinct_permits': 273, 'new_permits': 1, 'new_evidence': 1, 'unresolved': 1}"
+  },
+  {
+   "at": "2026-08-21T07:41:12+08:00",
+   "stage": "enrich_details",
+   "note": "{'queried': 1, 'found': 1, 'not_found': 0, 'designated_07': 1, 'pending_before': 1, 'aborted': None, 'pending_after': 0}"
   }
  ]
 }
