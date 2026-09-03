@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-03T07:53:44+08:00",
+ "generated_at": "2026-09-04T07:49:16+08:00",
  "sources": {
   "nme_list": "https://www.fda.gov.tw/TC/siteList.aspx?sid=2712",
   "lic_api": "https://lmspiq.fda.gov.tw/api/public/sh/piq/1000/licSearch",
@@ -18,18 +18,18 @@
   }
  },
  "stats": {
-  "announcements": 207,
+  "announcements": 208,
   "unresolved": 1,
-  "permits": 273,
-  "detail_ok": 273,
+  "permits": 274,
+  "detail_ok": 274,
   "detail_pending": 0,
   "detail_not_found": 0,
-  "designated_07": 263,
+  "designated_07": 264,
   "moiety_missing": 0,
   "lag_median": 69,
   "lag_min": 14,
   "lag_max": 1093,
-  "lag_n": 273,
+  "lag_n": 274,
   "reissue": 1
  },
  "controls": [
@@ -135,6 +135,52 @@
   }
  ],
  "rows": [
+  {
+   "permit_no": "衛部菌疫輸字第001332號",
+   "lic_id": "60001332",
+   "product": "益路取注射液",
+   "product_en": "Ilumetri 100 mg solution for injection in pre-filled syringe",
+   "applicant": "台灣康聯達股份有限公司",
+   "issue_date": "2026-07-07",
+   "issue_date_field": "oriIssueDate",
+   "_reissue": false,
+   "_issueDate": "2026-07-07",
+   "announced_on": "2026-09-03",
+   "announcement_title": "台灣康聯達股份有限公司「益路取注射液」(衛部菌疫輸字第001332號)",
+   "lag_days": 58,
+   "pdf": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639240301987636239&type=2&cid=51839",
+   "signals": [
+    "nme_report",
+    "restraint_07"
+   ],
+   "first_signal": "nme_report",
+   "first_signal_at": "2026-09-03",
+   "first_seen": "2026-09-04",
+   "detail_status": "ok",
+   "detail_queried_at": "2026-09-04",
+   "restraint_codes": [
+    "02 輸 入",
+    "07 新藥監視",
+    "5F 免除銜接性試驗",
+    "68 成品已完成元素不純物評估(Option 3)"
+   ],
+   "monitoring_family": [
+    "07"
+   ],
+   "ingredients_raw": [
+    "Tildrakizumab"
+   ],
+   "moieties": [
+    "TILDRAKIZUMAB"
+   ],
+   "dropped_excipients": [],
+   "moiety_missing": false,
+   "is_combination": false,
+   "atc": [],
+   "cancel_date": null,
+   "cancel_reason": [],
+   "permit_url": "https://lmspiq.fda.gov.tw/web/DRPIQ/DRPIQ1000Result?licId=60001332"
+  },
   {
    "permit_no": "衛部藥輸字第029131號",
    "lic_id": "52029131",
