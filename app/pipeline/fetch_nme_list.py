@@ -66,7 +66,14 @@ class FetchError(RuntimeError):
     pass
 
 
-def _get(url: str, timeout: float = 60.0) -> str:
+#: 連線層失敗（主機根本沒回話）的重試等待秒數。只重試「問不到」，
+#: 不重試「問到了但答錯」——HTTP 錯誤代表主機回了話，照樣立刻中止。
+#: GitHub runner 到政府網段的路由偶爾整段斷掉（Errno 101 Network is
+#: unreachable），單次失敗就讓整條工作流程紅掉、後面的明細與網頁都不跑。
+_RETRY_WAITS = (60.0, 180.0)
+
+
+def _get_once(url: str, timeout: float) -> str:
     req = urllib.request.Request(url, headers={"User-Agent": _UA})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
@@ -78,8 +85,27 @@ def _get(url: str, timeout: float = 60.0) -> str:
             f"HTTP {exc.code} {exc.reason}：{url}。"
             "中止，不寫檔——把錯誤頁存成資料會得到一份假的短清單。"
         ) from exc
-    except urllib.error.URLError as exc:
-        raise FetchError(f"連線失敗：{url}（{exc.reason}）") from exc
+
+
+def _get(url: str, timeout: float = 60.0, retry_waits: tuple[float, ...] = _RETRY_WAITS) -> str:
+    """GET 一頁。連線層失敗依 `retry_waits` 重試；HTTP 錯誤不重試。"""
+    for attempt in range(len(retry_waits) + 1):
+        try:
+            return _get_once(url, timeout)
+        except FetchError:
+            raise
+        # URLError 是 OSError 的子類；讀取途中逾時是 TimeoutError（也是 OSError）。
+        except OSError as exc:
+            reason = exc.reason if isinstance(exc, urllib.error.URLError) else exc
+            if attempt == len(retry_waits):
+                raise FetchError(
+                    f"連線失敗：{url}（{reason}），已試 {attempt + 1} 次。"
+                    "這是問不到，不是資料變化；ledger 未更動。"
+                ) from exc
+            wait = retry_waits[attempt]
+            print(f"# 連線失敗（{reason}），{wait:.0f} 秒後重試", file=sys.stderr, flush=True)
+            time.sleep(wait)
+    raise AssertionError("unreachable")
 
 
 def _clean_title(inner_html: str) -> str:
