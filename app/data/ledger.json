@@ -15438,16 +15438,6 @@
  ],
  "runs": [
   {
-   "at": "2026-09-04T07:49:15+08:00",
-   "stage": "fetch_nme_list",
-   "note": "{'announcements': 208, 'candidate_permits': 274, 'distinct_permits': 274, 'new_permits': 1, 'new_evidence': 1, 'unresolved': 1}"
-  },
-  {
-   "at": "2026-09-04T07:49:16+08:00",
-   "stage": "enrich_details",
-   "note": "{'queried': 1, 'found': 1, 'not_found': 0, 'designated_07': 1, 'pending_before': 1, 'aborted': None, 'pending_after': 0}"
-  },
-  {
    "at": "2026-09-05T07:46:08+08:00",
    "stage": "fetch_nme_list",
    "note": "{'announcements': 208, 'candidate_permits': 274, 'distinct_permits': 274, 'new_permits': 0, 'new_evidence': 0, 'unresolved': 1}"
@@ -15734,6 +15724,16 @@
   },
   {
    "at": "2026-10-04T08:23:36+08:00",
+   "stage": "enrich_details",
+   "note": "{'queried': 0, 'found': 0, 'not_found': 0, 'designated_07': 0, 'pending_before': 0, 'aborted': None, 'pending_after': 0}"
+  },
+  {
+   "at": "2026-10-05T08:29:08+08:00",
+   "stage": "fetch_nme_list",
+   "note": "{'announcements': 209, 'candidate_permits': 275, 'distinct_permits': 275, 'new_permits': 0, 'new_evidence': 0, 'unresolved': 1}"
+  },
+  {
+   "at": "2026-10-05T08:29:08+08:00",
    "stage": "enrich_details",
    "note": "{'queried': 0, 'found': 0, 'not_found': 0, 'designated_07': 0, 'pending_before': 0, 'aborted': None, 'pending_after': 0}"
   }
